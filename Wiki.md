@@ -25,9 +25,9 @@
 1. From inside your VM, run the scripts `01_Construct_URL.py` to download raw data from [https://www.bts.gov/topics/transborder-raw-data](https://www.bts.gov/topics/transborder-raw-data) into GCS
 2. Download metadata excel file from [https://www.bts.gov/transborder](https://www.bts.gov/transborder) . This file is missing some metadata info that is available in the PDF on the same webpage. I manually added this data into the excel, as well as performed some clean up in terms of excel sheet headers, USAstate column in the port_codes sheet, etc. This complete, cleaned-up excel file is available in the github repo. Upload this complete excel file into GCS as well by running the gsutil line of code (commented out) from `01_ExtractMetadata.sh` in the VM shell. 
 
-### C. Set up Dataproc cluster
+### C. Set up a pySpark cluster using Dataproc
 
-1. Enable the Cloud Dataproc API. Create a new cluster (I’ve named mine “tbf-analysis-cluster”). Preferably use the same region as your GCS bucket. Add any additional optional components you may desire (I added Jupyter Notebook and Docker, just in case, for the future.) This automatically creates a VM instance that is associated with the Dataproc cluster. I followed detailed instructions from this video: [https://www.youtube.com/watch?v=osAiAYahvh8&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=56](https://www.youtube.com/watch?v=osAiAYahvh8&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=56)
+1. Enable the Cloud Dataproc API. Create a new pySpark cluster (I’ve named mine “tbf-analysis-cluster”). Preferably use the same region as your GCS bucket. Add any additional optional components you may desire (I added Jupyter Notebook and Docker, just in case, for the future.) This automatically creates a VM instance that is associated with the Dataproc cluster. I followed detailed instructions from this video: [https://www.youtube.com/watch?v=osAiAYahvh8&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=56](https://www.youtube.com/watch?v=osAiAYahvh8&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=56)
 2. Add dataproc administrator permissions to the service account you are using
 
 ### D. Transform data and Load into data warehouse (BigQuery)
