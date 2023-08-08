@@ -20,7 +20,7 @@
 7. Ubuntu 20.4 usually comes with python3 as well as jupyter installed. If running `jupyter notebook` doesn’t work, it probably means it’s not installed. So if it isn’t, install jupyter using pip3 (`pip3 install jupyter`). Add jupyter to path (`export PATH=$PATH:/home/ahegde/.local/bin/jupyter`), source your bash rc file and try running jupyter. If it still says command not found, run jupyter using the command `python3 -m notebook`
 8. You may have to run `gcloud auth login` on VM shell to be able to access GCS bucket
 
-### B. Extract data files + Load into GCS
+### B. Extract data files + Load into data lake (GCS)
 
 1. From inside your VM, run the scripts `01_Construct_URL.py` to download raw data from [https://www.bts.gov/topics/transborder-raw-data](https://www.bts.gov/topics/transborder-raw-data) into GCS
 2. Download metadata excel file from [https://www.bts.gov/transborder](https://www.bts.gov/transborder) . This file is missing some metadata info that is available in the PDF on the same webpage. I manually added this data into the excel, as well as performed some clean up in terms of excel sheet headers, USAstate column in the port_codes sheet, etc. This complete, cleaned-up excel file is available in the github repo. Upload this complete excel file into GCS as well by running the gsutil line of code (commented out) from `01_ExtractMetadata.sh` in the VM shell. 
@@ -29,10 +29,15 @@
 
 1. Enable the Cloud Dataproc API. Create a new cluster (I’ve named mine “tbf-analysis-cluster”). Preferably use the same region as your GCS bucket. Add any additional optional components you may desire (I added Jupyter Notebook and Docker, just in case, for the future.) This automatically creates a VM instance that is associated with the Dataproc cluster. I followed detailed instructions from this video: [https://www.youtube.com/watch?v=osAiAYahvh8&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=56](https://www.youtube.com/watch?v=osAiAYahvh8&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb&index=56)
 2. Add dataproc administrator permissions to the service account you are using
-3. Upload scripts `02a_transform_consolidate.py` and `02b_transform_joinwithmetadata.py` to GCS bucket (In my case, I created a new bucket for BigQuery table storage, called “tbf-analysis-forbigquery”.)
-4. In the accompanying bash script `02a_transform_consolidate_submitjobs.sh` replace the arguments `-cluster` , `-region` , gsutil path to the `02a_transform_consolidate.py` script on GCS bucket, `-gcs_input_path` and `-gcs_output_path` with your own input/output bucket name(s) and information. Run this bash script in the VM
-5. In the accompanying bash script `02b_transform_joinwithmetadata_submitjobs.sh` replace the arguments `-cluster` , `-region` , gsutil path to the `02b_transform_joinwithmetadata.py` script on GCS bucket, `-gcs_input_path`, `-bq_output`, `-metadata_file` and `-temp_gcs_bucket` with your own input/output bucket name(s) and information. `-temp_gcs_bucket` is the name of the temporary GCS bucket associated with your Dataproc cluster. Run this bash script in the VM
 
-### D. Orchestration with Airflow
+### D. Transform data and Load into data warehouse (BigQuery)
+
+3. Upload scripts `02a_transform_consolidate.py` and `02b_transform_joinwithmetadata.py` to GCS bucket (in my case, I created a new bucket for BigQuery table storage, called “tbf-analysis-forbigquery”.)
+4. In the accompanying bash script `02a_transform_consolidate_submitjobs.sh` replace the arguments `-cluster` , `-region` , gsutil path to the `02a_transform_consolidate.py` script on GCS bucket, `-gcs_input_path` and `-gcs_output_path` with your own input/output bucket name(s) and information. 
+5. Run this bash script in the VM
+6. In the accompanying bash script `02b_transform_joinwithmetadata_submitjobs.sh` replace the arguments `-cluster` , `-region` , gsutil path to the `02b_transform_joinwithmetadata.py` script on GCS bucket, `-gcs_input_path`, `-bq_output`, `-metadata_file` and `-temp_gcs_bucket` with your own input/output bucket name(s) and information. `-temp_gcs_bucket` is the name of the temporary GCS bucket associated with your Dataproc cluster. 
+7. Run this bash script in the VM
+
+### E. Orchestration with Airflow
 
 This section is still a work in progress. I plan to use a Python operator for the Extraction-Load steps (`01_Construct_URL.py`), bash operator to transfer the metadata excel file to GCS, and bash operators for the Transformation-Load steps (`02a_transform_consolidate_submitjobs.sh` and `02b_transform_joinwithmetadata_submitjobs.sh`).
