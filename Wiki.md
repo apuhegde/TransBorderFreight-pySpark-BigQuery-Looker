@@ -1,5 +1,7 @@
 # Trans-border freight analysis
 
+## Steps to recreate the project
+
 ### A. Set up GCS account, GCS bucket and VM instance
 
 1. Set up google cloud project (I’ve called mine “trans-border-freights-394419”) and VM instance (make sure to give full access to the service account while setting up the VM!), service account permissions, gcloud authentication and ssh access (detailed instructions: [https://medium.com/google-cloud/how-to-use-multiple-accounts-with-gcloud-848fdb53a39a](https://medium.com/google-cloud/how-to-use-multiple-accounts-with-gcloud-848fdb53a39a). Also you will have to run `gcloud compute config-ssh` each time you start the VM before SSHing, see these instructions: [https://github.com/ziritrion/dataeng-zoomcamp/tree/c4447687719f76ca04cedfcc1ac8f8ad23eb0cde/7_project#create-a-vm-instance](https://github.com/ziritrion/dataeng-zoomcamp/tree/c4447687719f76ca04cedfcc1ac8f8ad23eb0cde/7_project#create-a-vm-instance))
