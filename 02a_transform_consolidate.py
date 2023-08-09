@@ -38,8 +38,8 @@ spark = SparkSession.builder \
 
 #set correct schema
 schema = types.StructType([
-    types.StructField("MONTH", types.IntegerType(),True),
-    types.StructField("YEAR", types.IntegerType(),True),
+    types.StructField("MONTH", types.StringType(),True),
+    types.StructField("YEAR", types.StringType(),True),
     types.StructField("TRDTYPE", types.StringType(),True),
     types.StructField("DEPE", types.StringType(),True),
     types.StructField("COUNTRY", types.IntegerType(),True),
@@ -110,11 +110,17 @@ for y in years:
                 if(len(drop_cols)>0):
                     for column in drop_cols:
                         df = df.drop(column)
+                
+                #add year_month column
+                df = df.withColumn("temp_str_append", F.expr("CASE WHEN length(MONTH)=1 THEN '0' " + "ELSE '' END"))
+                df = df.select('*',F.concat_ws('',df.temp_str_append,df.MONTH).alias("MONTH_NEW"))
+                df = df.select('*',F.concat_ws('-',df.YEAR,df.MONTH).alias("YEAR_MONTH"))
 
                 #sort columns
                 df = df.select( 
                                "MONTH", 
                                "YEAR", 
+                               "YEAR_MONTH",
                                "TRDTYPE", 
                                "DEPE", 
                                "COUNTRY", 
@@ -129,8 +135,9 @@ for y in years:
                                "FREIGHT_CHARGES")
 
                 #cast columns to appropriate data types
-                df = df.withColumn("MONTH", F.col("MONTH").cast(types.IntegerType()))
-                df = df.withColumn("YEAR", F.col("YEAR").cast(types.IntegerType()))
+                df = df.withColumn("MONTH", F.col("MONTH").cast(types.StringType()))
+                df = df.withColumn("YEAR", F.col("YEAR").cast(types.StringType()))
+                df = df.withColumn("YEAR_MONTH", F.col("YEAR_MONTH").cast(types.StringType()))
                 df = df.withColumn("COUNTRY", F.col("COUNTRY").cast(types.IntegerType()))
                 df = df.withColumn("COMMODITY2", F.col("COMMODITY2").cast(types.IntegerType()))
                 df = df.withColumn("DF", F.col("DF").cast(types.IntegerType()))
@@ -146,9 +153,11 @@ for y in years:
             df_final = reduce(DataFrame.union, df_append)
 
             #add unique ID column
-            df_final = df_final.withColumn("ID",F.row_number().over(Window.orderBy(F.monotonically_increasing_id())))
+            df_final = df_final \
+                .withColumn("ID",F.row_number().over(Window.orderBy(F.monotonically_increasing_id())))
 
-            df_final = df_final.select(F.concat_ws('_',df_final.ID,df_final.MONTH,df_final.YEAR).alias("INDEX"), "*")
+            df_final = df_final \
+                .select(F.concat_ws('_',df_final.ID,df_final.MONTH,df_final.YEAR).alias("INDEX"), "*")
 
             df_final = df_final.drop("ID")
 

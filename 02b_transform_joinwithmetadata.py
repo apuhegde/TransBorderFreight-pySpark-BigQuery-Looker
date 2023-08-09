@@ -178,20 +178,18 @@ df_pq.show()
 
 
 
-#Add a partition-index column to flatten the write directories:
-print("Partitioning data")
-df_pq = df_pq.select(F.concat_ws('_',df_pq.YEAR,df_pq.MONTH).alias("PARTITION_ID"), "*")
-df_pq.show()
+# #Add a partition-index column to flatten the write directories:
+# print("Partitioning data")
+# df_pq = df_pq.select(F.concat_ws('_',df_pq.YEAR,df_pq.MONTH).alias("PARTITION_ID"), "*")
+# df_pq.show()
 
+# #partition data by month and year
+# Windowspec = Window.partitionBy("PARTITION_ID").orderBy("INDEX")
 
-
-#partition data by month and year
-Windowspec = Window.partitionBy("PARTITION_ID").orderBy("INDEX")
-
-#add row numbers
-print("adding row numbers")
-df_pq = df_pq.select(F.row_number().over(Windowspec).alias("PARTITION_ROW_NUM"), "*")
-df_pq.show()
+# #add row numbers
+# print("adding row numbers")
+# df_pq = df_pq.select(F.row_number().over(Windowspec).alias("PARTITION_ROW_NUM"), "*")
+# df_pq.show()
 
 
 
