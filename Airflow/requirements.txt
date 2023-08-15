@@ -1,0 +1,5 @@
+apache-airflow==2.4.1
+xlrd
+pyspark
+functools
+pandas
