@@ -58,7 +58,7 @@ resource "google_compute_firewall" "ssh-rule" {
 
 # VM instance
 resource "google_compute_instance" "vm_instance" {
-  name          = "airflow-instance"
+  name          = "terraform-instance"
   project       = var.project
   machine_type  = "e2-standard-4"
   zone          = var.zone
@@ -77,7 +77,19 @@ resource "google_compute_instance" "vm_instance" {
     }
   }
 
-  metadata_startup_script = "${file("./docker_installation.sh")}"
+  # metadata_startup_script = "${file("./docker_installation.sh")}"
+
+  # provisioner "local-exec" {
+  #   command = "gcloud compute config-ssh"
+  # }
+
+  # provisioner "local-exec" {
+  #   command = <<EOT
+  #   gcloud compute config-ssh
+  #   gcloud compute scp ~/.google/credentials/google_credentials.json airflow-instance:~ --zone=us-central1-a
+  #   EOT
+  # }
+
 }
 
 output "ip" {

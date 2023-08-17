@@ -39,4 +39,3 @@ variable "BQ_DATASET" {
 }
 
 
-
