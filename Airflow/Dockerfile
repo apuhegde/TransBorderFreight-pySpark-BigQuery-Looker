@@ -3,10 +3,13 @@
 FROM apache/airflow:2.4.1
 
 ENV AIRFLOW_HOME=/opt/airflow
+#ENV AIRFLOW_HOME=/usr/local/airflow
 
 USER root
 RUN apt-get update -qq && apt-get install vim -qqq
-# git gcc g++ -qqq
+#git gcc g++ -qqq
+RUN sudo apt-get -y install gcc
+RUN hash -r
 
 USER ${AIRFLOW_UID}
 COPY requirements.txt .
