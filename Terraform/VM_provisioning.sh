@@ -6,9 +6,22 @@ sudo apt install apt-transport-https ca-certificates curl software-properties-co
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 sudo add-apt-repository "deb [arch=$(dpkg --print-architecture)] https://download.docker.com/linux/ubuntu `lsb_release -cs` test"
 sudo apt update
-sudo apt install docker-ce
-sudo apt install docker-ce-cli
-sudo apt install containerd.io
-sudo apt install docker-compose-plugin
+sudo apt -y install docker-ce
+sudo apt -y install docker-ce-cli
+sudo apt -y install containerd.io
+sudo apt -y install docker-compose-plugin
+sudo usermod -aG docker ${user}
+newgrp docker
+
+#exit out of sub-shell
+trap "exit 1" 10
+PROC=$$
+fatal(){
+  echo "$@" >&2
+  kill -10 $PROC
+}
+
+(fatal "Script exiting")
+
 echo $(docker --version)
 echo $(docker compose version)
