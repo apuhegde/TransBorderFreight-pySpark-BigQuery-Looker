@@ -25,7 +25,7 @@ x-airflow-common:
     GCP_ZONE: 'us-central1-a'
     BQ_DATASET: 'tbf_with_metadata2'
     BQ_TABLE: 'data-for-reporting'
-    METADATA_FILE: 'gs://tbf-analysis/metadata/TransBorderCodes.xls'
+    METADATA_FILE: 'gs://tbf-analysis-terraform_trans-border-freights-394419/metadata/TransBorderCodes.xls'
     RAW_DATA_URL: 'https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw'
     DOWNLOAD_YEAR_START: 2014
     DOWNLOAD_YEAR_END: 2024

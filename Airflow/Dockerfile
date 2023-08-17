@@ -37,13 +37,15 @@ RUN DOWNLOAD_URL="https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/goo
     && rm -rf "${TMP_DIR}" \
     && gcloud --version
 
-RUN gsutil cp gs://tbf-analysis/code/01_Construct_URL.py /opt/airflow
-RUN gsutil cp gs://tbf-analysis/code/01_ExtractData_LoadToGCS.sh /opt/airflow
-RUN gsutil cp gs://tbf-analysis/code/01_Construct_URL.py /opt/airflow
-RUN gsutil cp gs://tbf-analysis/code/01_ExtractData_LoadToGCS.sh /opt/airflow
 
-tbf-analysis-terraform_trans-border-freights-394419
+#clone git repo and transfer scripts to GCS bucket for dataproc
+#RUN cd TransBorderFreight-pySpark-BigQuery-Looker
 
+# RUN gsutil cp gs://tbf-analysis-terraform_trans-border-freights-394419/code/01_Construct_URL.py /opt/airflow
+# RUN gsutil cp gs://tbf-analysis-terraform_trans-border-freights-394419/code/01_ExtractData_LoadToGCS.sh /opt/airflow
+RUN gsutil cp ~/TransBorderFreight-pySpark-BigQuery-Looker/02a_transform_consolidate.py gs://tbf-analysis-terraform_trans-border-freights-394419/code/02a_transform_consolidate.py
+RUN gsutil cp ~/TransBorderFreight-pySpark-BigQuery-Looker/02b_transform_joinwithmetadata.py gs://tbf-analysis-terraform_trans-border-freights-394419/code/02b_transform_joinwithmetadata.py
+RUN gsutil cp ~/TransBorderFreight-pySpark-BigQuery-Looker/TransBorderCodes.xls gs://tbf-analysis-terraform_trans-border-freights-394419/metadata/TransBorderCodes.xls
 #RUN export PYTHONPATH=/opt/airflow/:$PYTHONPATH
 
 WORKDIR $AIRFLOW_HOME
