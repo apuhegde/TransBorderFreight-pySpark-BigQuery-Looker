@@ -14,7 +14,7 @@ RUN hash -r
 USER ${AIRFLOW_UID}
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install --no-cache-dir xlrd pyspark functools pandas
+#RUN pip install --no-cache-dir xlrd pyspark functools pandas
 
 
 # Ref: https://airflow.apache.org/docs/docker-stack/recipes.html
@@ -46,9 +46,10 @@ RUN DOWNLOAD_URL="https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/goo
 
 # RUN gsutil cp gs://tbf-analysis-terraform_trans-border-freights-394419/code/01_Construct_URL.py /opt/airflow
 # RUN gsutil cp gs://tbf-analysis-terraform_trans-border-freights-394419/code/01_ExtractData_LoadToGCS.sh /opt/airflow
-RUN gsutil cp ~/TransBorderFreight-pySpark-BigQuery-Looker/02a_transform_consolidate.py gs://tbf-analysis-terraform_trans-border-freights-394419/code/02a_transform_consolidate.py
-RUN gsutil cp ~/TransBorderFreight-pySpark-BigQuery-Looker/02b_transform_joinwithmetadata.py gs://tbf-analysis-terraform_trans-border-freights-394419/code/02b_transform_joinwithmetadata.py
-RUN gsutil cp ~/TransBorderFreight-pySpark-BigQuery-Looker/TransBorderCodes.xls gs://tbf-analysis-terraform_trans-border-freights-394419/metadata/TransBorderCodes.xls
+#RUN gcloud auth activate-service-account terraform@trans-border-freights-394419.iam.gserviceaccount.com --key-file /home/ahegde/.google/credentials/google_credentials.json
+#RUN gsutil cp ~/TransBorderFreight-pySpark-BigQuery-Looker/02a_transform_consolidate.py gs://tbf-analysis-terraform_trans-border-freights-394419/code/02a_transform_consolidate.py
+#RUN gsutil cp ~/TransBorderFreight-pySpark-BigQuery-Looker/02b_transform_joinwithmetadata.py gs://tbf-analysis-terraform_trans-border-freights-394419/code/02b_transform_joinwithmetadata.py
+#RUN gsutil cp ~/TransBorderFreight-pySpark-BigQuery-Looker/TransBorderCodes.xls gs://tbf-analysis-terraform_trans-border-freights-394419/metadata/TransBorderCodes.xls
 #RUN export PYTHONPATH=/opt/airflow/:$PYTHONPATH
 
 WORKDIR $AIRFLOW_HOME
