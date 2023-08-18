@@ -29,6 +29,7 @@ x-airflow-common:
     RAW_DATA_URL: 'https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw'
     DOWNLOAD_YEAR_START: 2014
     DOWNLOAD_YEAR_END: 2024
+    DAGS_LOCATION: $${DAGS_LOC}
 
   volumes:
     - ./dags:/opt/airflow/dags
@@ -44,8 +45,24 @@ x-airflow-common:
     &airflow-common-depends-on
     redis:
       condition: service_healthy
+    postgres:
+      condition: service_healthy
 
 services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 5
+    restart: always
+
   redis:
     image: redis:latest
     expose:
@@ -61,7 +78,7 @@ services:
     <<: *airflow-common
     command: webserver
     ports:
-      - 8050:8050
+      - 8080:8080
     healthcheck:
       test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
       interval: 10s
@@ -230,6 +247,5 @@ services:
       airflow-init:
         condition: service_completed_successfully
 
-        #pgbouncer:
-  # Enable PgBouncer
-  #  enabled: true
+volumes:
+  postgres-db-volume:

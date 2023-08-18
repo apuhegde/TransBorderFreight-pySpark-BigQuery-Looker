@@ -6,7 +6,7 @@ import logging
 #set up logging
 logger = logging.getLogger(__name__)
 
-def construct_download_URL(URL_PREFIX, years, months):
+def construct_download_URL(URL_PREFIX, years, months, extract_script_loc):
     for y in years:
         if y < 2018:
             URL=f'{URL_PREFIX}/{y}/{y}.zip'
@@ -59,7 +59,7 @@ def construct_download_URL(URL_PREFIX, years, months):
 
                 print(URL)
                 print('running bash script')
-                s.call(["bash", "./01_ExtractData_LoadToGCS.sh", URL, str(y)])
+                s.call(["bash", extract_script_loc, URL, str(y)])
                 print ("Pausing for 15 Seconds")
                 t.sleep(15)
 

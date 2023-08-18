@@ -3,17 +3,20 @@
 FROM apache/airflow:2.4.1
 
 ENV AIRFLOW_HOME=/opt/airflow
+#dir location of raw data extraction bash script
+ENV DAGS_LOC=/Users/ahegde/Job_misc/Portfolio/TransBorderFreightAnalysis/VM_project_files/TransBorderFreight-pySpark-BigQuery-Looker/Airflow/dags
 #ENV AIRFLOW_HOME=/usr/local/airflow
 
 USER root
 RUN apt-get update -qq && apt-get install vim -qqq
 #git gcc g++ -qqq
-RUN sudo apt-get -y install gcc
-RUN hash -r
+#RUN sudo apt-get -y install gcc
+#RUN hash -r
 
 USER ${AIRFLOW_UID}
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir sqlalchemy psycopg2-binary
 #RUN pip install --no-cache-dir xlrd pyspark functools pandas
 
 

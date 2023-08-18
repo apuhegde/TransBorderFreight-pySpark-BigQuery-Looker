@@ -12,7 +12,6 @@ from airflow.operators.python import PythonOperator
 from airflow.utils.task_group import TaskGroup
 construct_download_URL = importlib.import_module("01_Construct_URL", package=None)
 
-
 #Get the environment variables
 PROJECT_ID = os.environ.get("GCP_PROJECT_ID")
 BUCKET = os.environ.get("GCP_GCS_BUCKET")
@@ -38,6 +37,7 @@ START_YEAR = int(os.environ.get("DOWNLOAD_YEAR_START"))
 END_YEAR = int(os.environ.get("DOWNLOAD_YEAR_END"))
 years = range(START_YEAR,END_YEAR, 1)
 months = range(1, 13)
+extract_script_loc = os.environ.get("DAGS_LOCATION")+"01_ExtractData_LoadToGCS.sh"
 
 
 #Define default args for dag
@@ -125,11 +125,12 @@ with DAG(dag_id="tbf_analysis_dag",
     #1. Download RAW data files from data.gov
     download_raw_data_task = PythonOperator(
                 task_id=f"download_raw_data_task",
-                python_callable=construct_download_URL,
+                python_callable=construct_download_URL.construct_download_URL,
                 op_kwargs={
                     "URL_PREFIX": URL_PREFIX,
                     "years": years,
-                    "months": months
+                    "months": months,
+                    "extract_script_loc": extract_script_loc
                 },
             )
     
