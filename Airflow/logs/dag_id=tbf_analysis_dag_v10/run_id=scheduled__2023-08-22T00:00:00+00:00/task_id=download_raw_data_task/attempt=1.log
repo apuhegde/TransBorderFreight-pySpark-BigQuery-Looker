@@ -1,0 +1,93 @@
+[2023-08-22T00:31:43.030+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tbf_analysis_dag_v10.download_raw_data_task scheduled__2023-08-22T00:00:00+00:00 [queued]>
+[2023-08-22T00:31:43.036+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tbf_analysis_dag_v10.download_raw_data_task scheduled__2023-08-22T00:00:00+00:00 [queued]>
+[2023-08-22T00:31:43.036+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22T00:31:43.037+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-08-22T00:31:43.037+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22T00:31:43.044+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): download_raw_data_task> on 2023-08-22 00:00:00+00:00
+[2023-08-22T00:31:43.049+0000] {standard_task_runner.py:54} INFO - Started process 2788 to run task
+[2023-08-22T00:31:43.052+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tbf_analysis_dag_v10', 'download_raw_data_task', 'scheduled__2023-08-22T00:00:00+00:00', '--job-id', '74', '--raw', '--subdir', 'DAGS_FOLDER/tbf_analysis_dag_v10.py', '--cfg-path', '/tmp/tmppma7wieg']
+[2023-08-22T00:31:43.056+0000] {standard_task_runner.py:83} INFO - Job 74: Subtask download_raw_data_task
+[2023-08-22T00:31:43.058+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/tbf_analysis_dag_v10.py
+[2023-08-22T00:31:43.119+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:545: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2023-08-22T00:31:43.153+0000] {task_command.py:384} INFO - Running <TaskInstance: tbf_analysis_dag_v10.download_raw_data_task scheduled__2023-08-22T00:00:00+00:00 [running]> on host 2791cbd3eb46
+[2023-08-22T00:31:43.197+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tbf_analysis_dag_v10
+AIRFLOW_CTX_TASK_ID=download_raw_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-22T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-08-22T00:00:00+00:00
+[2023-08-22T00:31:43.198+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2014/2014.zip
+[2023-08-22T00:31:43.198+0000] {logging_mixin.py:117} INFO - Running bash script
+[2023-08-22T00:31:43.209+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:31:58.227+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2015/2015.zip
+[2023-08-22T00:31:58.241+0000] {logging_mixin.py:117} INFO - Running bash script
+[2023-08-22T00:31:58.283+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:32:13.299+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2016/2016.zip
+[2023-08-22T00:32:13.304+0000] {logging_mixin.py:117} INFO - Running bash script
+[2023-08-22T00:32:13.332+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:32:28.336+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2017/2017.zip
+[2023-08-22T00:32:28.346+0000] {logging_mixin.py:117} INFO - Running bash script
+[2023-08-22T00:32:28.388+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:32:43.404+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2018/Jan.2018.zip
+[2023-08-22T00:32:43.409+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:32:44.587+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:32:59.609+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2018/Feb2018.zip
+[2023-08-22T00:32:59.622+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:33:00.790+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:33:15.810+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2018/Mar2018.zip
+[2023-08-22T00:33:15.813+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:33:55.280+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:34:10.300+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2018/April2018.zip
+[2023-08-22T00:34:10.301+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:34:11.370+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:34:26.382+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2018/May2018.zip
+[2023-08-22T00:34:26.384+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:34:27.334+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:34:42.347+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2018/June2018.zip
+[2023-08-22T00:34:42.349+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:34:43.078+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:34:58.095+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2018/July2018.zip
+[2023-08-22T00:34:58.096+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:34:58.848+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:35:13.858+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2018/August2018.zip
+[2023-08-22T00:35:13.864+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:35:14.714+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:35:29.728+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2018/September2018.zip
+[2023-08-22T00:35:29.730+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:35:30.632+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:35:45.642+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2018/October2018TransBorderRawData.zip
+[2023-08-22T00:35:45.651+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:35:47.644+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:36:02.653+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2018/November2018TransBorderRawData.zip
+[2023-08-22T00:36:02.661+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:36:03.578+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:36:18.584+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2018/December2018TransBorderRawData-plus-yr-end.zip.zip
+[2023-08-22T00:36:18.588+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:36:19.463+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:36:34.481+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2019/January2019TransBorderRawData.zip
+[2023-08-22T00:36:34.485+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:36:35.139+0000] {logging_mixin.py:117} INFO - Pausing for 15 Seconds
+[2023-08-22T00:36:50.157+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2019/February2019TransBorderRawData.zip
+[2023-08-22T00:36:50.160+0000] {logging_mixin.py:117} INFO - running bash script
+[2023-08-22T00:39:34.487+0000] {local_task_job.py:228} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2023-08-22T00:39:34.494+0000] {process_utils.py:133} INFO - Sending Signals.SIGTERM to group 2788. PIDs of all processes in the group: [4794, 5040, 5049, 5053, 5066, 5067, 5192, 5193, 5195, 5196, 2788]
+[2023-08-22T00:39:34.495+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 2788
+[2023-08-22T00:39:34.504+0000] {taskinstance.py:1562} ERROR - Received SIGTERM. Terminating subprocesses.
+[2023-08-22T00:39:34.606+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=4794, status='terminated', started='00:36:49') (4794) terminated with exit code None
+[2023-08-22T00:39:34.609+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=5040, status='terminated', started='00:36:50') (5040) terminated with exit code None
+[2023-08-22T00:39:34.706+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=2788, status='terminated', exitcode=0, started='00:31:42') (2788) terminated with exit code 0
+[2023-08-22T00:39:34.708+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=5196, status='terminated', started='00:36:52') (5196) terminated with exit code None
+[2023-08-22T00:39:34.709+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=5053, status='terminated', started='00:36:50') (5053) terminated with exit code None
+[2023-08-22T00:39:34.709+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=5193, status='terminated', started='00:36:52') (5193) terminated with exit code None
+[2023-08-22T00:39:34.804+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=5049, status='terminated', started='00:36:50') (5049) terminated with exit code None
+[2023-08-22T00:39:34.805+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=5066, status='terminated', started='00:36:51') (5066) terminated with exit code None
+[2023-08-22T00:39:34.806+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=5192, status='terminated', started='00:36:52') (5192) terminated with exit code None
+[2023-08-22T00:39:34.807+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=5195, status='terminated', started='00:36:52') (5195) terminated with exit code None
+[2023-08-22T00:40:34.548+0000] {process_utils.py:147} WARNING - process psutil.Process(pid=5067, name='python3', status='sleeping', started='00:36:51') did not respond to SIGTERM. Trying SIGKILL
+[2023-08-22T00:40:34.563+0000] {process_utils.py:84} INFO - Sending the signal Signals.SIGKILL to group 2788
+[2023-08-22T00:40:34.664+0000] {process_utils.py:79} INFO - Process psutil.Process(pid=5067, name='python3', status='terminated', started='00:36:51') (5067) terminated with exit code None

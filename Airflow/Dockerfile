@@ -2,23 +2,26 @@
 
 FROM apache/airflow:2.4.1
 
+#ENV AIRFLOW_UID=50000
 ENV AIRFLOW_HOME=/opt/airflow
 #dir location of raw data extraction bash script
-ENV DAGS_LOC=/Users/ahegde/Job_misc/Portfolio/TransBorderFreightAnalysis/VM_project_files/TransBorderFreight-pySpark-BigQuery-Looker/Airflow/dags
+#ENV DAGS_LOC=/Users/ahegde/Job_misc/Portfolio/TransBorderFreightAnalysis/VM_project_files/TransBorderFreight-pySpark-BigQuery-Looker/Airflow/dags
 #ENV AIRFLOW_HOME=/usr/local/airflow
 
 USER root
 RUN apt-get update -qq && apt-get install vim -qqq
 #git gcc g++ -qqq
-#RUN sudo apt-get -y install gcc
-#RUN hash -r
+RUN apt-get upgrade wget unzip rename -y
+# RUN apt-get -y install wget
+# RUN apt-get -y install unzip
+# RUN apt-get -y install rename
 
 USER ${AIRFLOW_UID}
+
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 RUN pip install --no-cache-dir sqlalchemy psycopg2-binary
 #RUN pip install --no-cache-dir xlrd pyspark functools pandas
-
 
 # Ref: https://airflow.apache.org/docs/docker-stack/recipes.html
 
@@ -55,6 +58,15 @@ RUN DOWNLOAD_URL="https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/goo
 #RUN gsutil cp ~/TransBorderFreight-pySpark-BigQuery-Looker/TransBorderCodes.xls gs://tbf-analysis-terraform_trans-border-freights-394419/metadata/TransBorderCodes.xls
 #RUN export PYTHONPATH=/opt/airflow/:$PYTHONPATH
 
+# USER ${AIRFLOW_UID}
+# RUN gcloud auth activate-service-account terraform@trans-border-freights-394419.iam.gserviceaccount.com --key-file /.google/credentials/google_credentials.json
+
+# WORKDIR /Users/ahegde/
+
+# RUN mkdir -p ~/.google/credentials
+# COPY /Users/ahegde/.google/credentials/google_credentials.json ~/.google/credentials
+
+USER root
 WORKDIR $AIRFLOW_HOME
 
 USER $AIRFLOW_UID

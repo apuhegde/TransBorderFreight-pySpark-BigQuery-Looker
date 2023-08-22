@@ -19,6 +19,7 @@ x-airflow-common:
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
     GOOGLE_APPLICATION_CREDENTIALS: /.google/credentials/google_credentials.json
     AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/google_credentials.json'
+    GCS_SERVICE_ACCOUNT: terraform@trans-border-freights-394419.iam.gserviceaccount.com
     GCP_PROJECT_ID: 'trans-border-freights-394419'
     GCP_GCS_BUCKET: 'tbf-analysis-terraform_trans-border-freights-394419'
     GCP_REGION: 'us-central1'
@@ -29,13 +30,15 @@ x-airflow-common:
     RAW_DATA_URL: 'https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw'
     DOWNLOAD_YEAR_START: 2014
     DOWNLOAD_YEAR_END: 2024
-    DAGS_LOCATION: $${DAGS_LOC}
+    DAGS_LOCATION: ${AIRFLOW_HOME}
+    GCS_TRANSFER_SCRIPT: /opt/airflow/transfer_to_GCS/gcloud_setup_local.sh
 
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
     - ~/.google/credentials/:/.google/credentials:ro
+    - ./transfer_to_GCS:/opt/airflow/transfer_to_GCS
 #    - ./dags:/usr/local/airflow/dags
 #    - ./logs:/usr/local/airflow/logs
 #    - ./plugins:/usr/local/airflow/plugins

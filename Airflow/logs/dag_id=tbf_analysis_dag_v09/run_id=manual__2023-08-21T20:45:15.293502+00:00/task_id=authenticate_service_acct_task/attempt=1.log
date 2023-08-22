@@ -1,0 +1,31 @@
+[2023-08-21T20:45:19.911+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tbf_analysis_dag_v09.authenticate_service_acct_task manual__2023-08-21T20:45:15.293502+00:00 [queued]>
+[2023-08-21T20:45:19.928+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tbf_analysis_dag_v09.authenticate_service_acct_task manual__2023-08-21T20:45:15.293502+00:00 [queued]>
+[2023-08-21T20:45:19.929+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-21T20:45:19.929+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-08-21T20:45:19.930+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-21T20:45:19.958+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): authenticate_service_acct_task> on 2023-08-21 20:45:15.293502+00:00
+[2023-08-21T20:45:19.968+0000] {standard_task_runner.py:54} INFO - Started process 389 to run task
+[2023-08-21T20:45:19.974+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tbf_analysis_dag_v09', 'authenticate_service_acct_task', 'manual__2023-08-21T20:45:15.293502+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/tbf_analysis_dag_v09.py', '--cfg-path', '/tmp/tmpgztqhjq5']
+[2023-08-21T20:45:19.976+0000] {standard_task_runner.py:83} INFO - Job 63: Subtask authenticate_service_acct_task
+[2023-08-21T20:45:19.978+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/tbf_analysis_dag_v09.py
+[2023-08-21T20:45:20.228+0000] {task_command.py:384} INFO - Running <TaskInstance: tbf_analysis_dag_v09.authenticate_service_acct_task manual__2023-08-21T20:45:15.293502+00:00 [running]> on host 7e2c898f6e79
+[2023-08-21T20:45:20.333+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tbf_analysis_dag_v09
+AIRFLOW_CTX_TASK_ID=authenticate_service_acct_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-21T20:45:15.293502+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-08-21T20:45:15.293502+00:00
+[2023-08-21T20:45:20.335+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-08-21T20:45:20.336+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'echo starting_gcloud_auth; gcloud auth activate-service-account terraform@trans-border-freights-394419.iam.gserviceaccount.com --key-file /.google/credentials/google_credentials.json; echo ending_gcloud_auth']
+[2023-08-21T20:45:20.355+0000] {subprocess.py:86} INFO - Output:
+[2023-08-21T20:45:20.357+0000] {subprocess.py:93} INFO - starting_gcloud_auth
+[2023-08-21T20:45:21.385+0000] {subprocess.py:93} INFO - Activated service account credentials for: [terraform@trans-border-freights-394419.iam.gserviceaccount.com]
+[2023-08-21T20:45:21.455+0000] {subprocess.py:93} INFO - ending_gcloud_auth
+[2023-08-21T20:45:21.456+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-08-21T20:45:21.499+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=tbf_analysis_dag_v09, task_id=authenticate_service_acct_task, execution_date=20230821T204515, start_date=20230821T204519, end_date=20230821T204521
+[2023-08-21T20:45:21.553+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-08-21T20:45:21.575+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

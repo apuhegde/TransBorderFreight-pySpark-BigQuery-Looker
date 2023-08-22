@@ -1,0 +1,25 @@
+[2023-08-22T15:16:20.557+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tbf_analysis_dag_v13.download_raw_data_task scheduled__2023-08-22T00:00:00+00:00 [queued]>
+[2023-08-22T15:16:20.564+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tbf_analysis_dag_v13.download_raw_data_task scheduled__2023-08-22T00:00:00+00:00 [queued]>
+[2023-08-22T15:16:20.564+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22T15:16:20.565+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-08-22T15:16:20.565+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22T15:16:20.574+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): download_raw_data_task> on 2023-08-22 00:00:00+00:00
+[2023-08-22T15:16:20.584+0000] {standard_task_runner.py:54} INFO - Started process 2325 to run task
+[2023-08-22T15:16:20.589+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tbf_analysis_dag_v13', 'download_raw_data_task', 'scheduled__2023-08-22T00:00:00+00:00', '--job-id', '105', '--raw', '--subdir', 'DAGS_FOLDER/tbf_analysis_dag_v13.py', '--cfg-path', '/tmp/tmpfdzn_0w4']
+[2023-08-22T15:16:20.591+0000] {standard_task_runner.py:83} INFO - Job 105: Subtask download_raw_data_task
+[2023-08-22T15:16:20.593+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/tbf_analysis_dag_v13.py
+[2023-08-22T15:16:20.659+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:545: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2023-08-22T15:16:20.705+0000] {task_command.py:384} INFO - Running <TaskInstance: tbf_analysis_dag_v13.download_raw_data_task scheduled__2023-08-22T00:00:00+00:00 [running]> on host fe3d229cef63
+[2023-08-22T15:16:20.769+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tbf_analysis_dag_v13
+AIRFLOW_CTX_TASK_ID=download_raw_data_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-22T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-08-22T00:00:00+00:00
+[2023-08-22T15:16:20.777+0000] {logging_mixin.py:117} INFO - https://www.bts.gov/sites/bts.dot.gov/files/transborder-raw/2014/2014.zip
+[2023-08-22T15:16:20.778+0000] {logging_mixin.py:117} INFO - Running bash script

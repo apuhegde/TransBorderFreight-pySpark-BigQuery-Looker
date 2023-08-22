@@ -1,0 +1,13 @@
+[2023-08-20T19:00:02.044+0000] {processor.py:156} INFO - Started process (PID=44) to work on /opt/airflow/dags/tbf_analysis_dag_v05.py
+[2023-08-20T19:00:02.045+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v05.py for tasks to queue
+[2023-08-20T19:00:02.046+0000] {logging_mixin.py:117} INFO - [2023-08-20T19:00:02.046+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v05.py
+[2023-08-20T19:00:02.048+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v05.py
+[2023-08-20T19:00:02.092+0000] {processor.py:727} INFO - Executed failure callback for <TaskInstance: tbf_analysis_dag_v05.download_raw_data_task manual__2023-08-20T18:44:06.490886+00:00 [up_for_retry]> in state up_for_retry
+[2023-08-20T19:00:02.094+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v05.py took 0.053 seconds
+[2023-08-20T19:00:12.101+0000] {processor.py:156} INFO - Started process (PID=54) to work on /opt/airflow/dags/tbf_analysis_dag_v05.py
+[2023-08-20T19:00:12.102+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v05.py for tasks to queue
+[2023-08-20T19:00:12.103+0000] {logging_mixin.py:117} INFO - [2023-08-20T19:00:12.103+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v05.py
+[2023-08-20T19:00:12.104+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v05.py
+[2023-08-20T19:00:12.138+0000] {processor.py:727} INFO - Executed failure callback for <TaskInstance: tbf_analysis_dag_v05.download_raw_data_task scheduled__2023-08-20T00:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2023-08-20T19:00:12.143+0000] {processor.py:727} INFO - Executed failure callback for <TaskInstance: tbf_analysis_dag_v05.download_raw_data_task scheduled__2023-08-20T00:00:00+00:00 [failed]> in state failed
+[2023-08-20T19:00:12.145+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v05.py took 0.046 seconds

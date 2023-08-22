@@ -1,0 +1,39 @@
+[2023-08-22T01:02:09.816+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tbf_analysis_dag_v11.transfer_to_GCS_task manual__2023-08-22T01:02:02.564786+00:00 [queued]>
+[2023-08-22T01:02:09.822+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: tbf_analysis_dag_v11.transfer_to_GCS_task manual__2023-08-22T01:02:02.564786+00:00 [queued]>
+[2023-08-22T01:02:09.823+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22T01:02:09.824+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 2
+[2023-08-22T01:02:09.825+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-22T01:02:09.833+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): transfer_to_GCS_task> on 2023-08-22 01:02:02.564786+00:00
+[2023-08-22T01:02:09.839+0000] {standard_task_runner.py:54} INFO - Started process 159 to run task
+[2023-08-22T01:02:09.843+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tbf_analysis_dag_v11', 'transfer_to_GCS_task', 'manual__2023-08-22T01:02:02.564786+00:00', '--job-id', '85', '--raw', '--subdir', 'DAGS_FOLDER/tbf_analysis_dag_v11.py', '--cfg-path', '/tmp/tmpu_xusk15']
+[2023-08-22T01:02:09.845+0000] {standard_task_runner.py:83} INFO - Job 85: Subtask transfer_to_GCS_task
+[2023-08-22T01:02:09.846+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/***/dags/tbf_analysis_dag_v11.py
+[2023-08-22T01:02:09.955+0000] {task_command.py:384} INFO - Running <TaskInstance: tbf_analysis_dag_v11.transfer_to_GCS_task manual__2023-08-22T01:02:02.564786+00:00 [running]> on host a689a645a1f0
+[2023-08-22T01:02:10.015+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tbf_analysis_dag_v11
+AIRFLOW_CTX_TASK_ID=transfer_to_GCS_task
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-22T01:02:02.564786+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-08-22T01:02:02.564786+00:00
+[2023-08-22T01:02:10.019+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-08-22T01:02:10.020+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'bash /opt/***/transfer_to_GCS/gcloud_setup_local.sh gs://tbf-analysis-terraform_trans-border-freights-394419']
+[2023-08-22T01:02:10.041+0000] {subprocess.py:86} INFO - Output:
+[2023-08-22T01:02:10.051+0000] {subprocess.py:93} INFO - Bucket is:
+[2023-08-22T01:02:10.051+0000] {subprocess.py:93} INFO - gs://tbf-analysis-terraform_trans-border-freights-394419
+[2023-08-22T01:02:11.812+0000] {subprocess.py:93} INFO - Copying file:///opt/***/transfer_to_GCS/02a_transform_consolidate.py [Content-Type=text/x-python]...
+[2023-08-22T01:02:12.602+0000] {subprocess.py:93} INFO - / [0/1 files][    0.0 B/  6.8 KiB]   0% Done                                    / [1/1 files][  6.8 KiB/  6.8 KiB] 100% Done                                    -
+[2023-08-22T01:02:12.603+0000] {subprocess.py:93} INFO - Operation completed over 1 objects/6.8 KiB.
+[2023-08-22T01:02:14.128+0000] {subprocess.py:93} INFO - Copying file:///opt/***/transfer_to_GCS/02b_transform_joinwithmetadata.py [Content-Type=text/x-python]...
+[2023-08-22T01:02:14.530+0000] {subprocess.py:93} INFO - / [0/1 files][    0.0 B/  6.3 KiB]   0% Done                                    / [1/1 files][  6.3 KiB/  6.3 KiB] 100% Done
+[2023-08-22T01:02:14.534+0000] {subprocess.py:93} INFO - Operation completed over 1 objects/6.3 KiB.
+[2023-08-22T01:02:15.921+0000] {subprocess.py:93} INFO - Copying file:///opt/***/transfer_to_GCS/TransBorderCodes.xls [Content-Type=application/vnd.ms-excel]...
+[2023-08-22T01:02:16.678+0000] {subprocess.py:93} INFO - / [0/1 files][    0.0 B/ 80.5 KiB]   0% Done                                    / [1/1 files][ 80.5 KiB/ 80.5 KiB] 100% Done                                    -
+[2023-08-22T01:02:16.679+0000] {subprocess.py:93} INFO - Operation completed over 1 objects/80.5 KiB.
+[2023-08-22T01:02:16.871+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-08-22T01:02:16.903+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=tbf_analysis_dag_v11, task_id=transfer_to_GCS_task, execution_date=20230822T010202, start_date=20230822T010209, end_date=20230822T010216
+[2023-08-22T01:02:16.956+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-08-22T01:02:16.981+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
