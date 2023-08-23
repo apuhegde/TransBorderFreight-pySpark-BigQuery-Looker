@@ -1,0 +1,12 @@
+[2023-08-23T13:30:25.842+0000] {processor.py:156} INFO - Started process (PID=26679) to work on /opt/airflow/dags/tbf_analysis_dag_v14.py
+[2023-08-23T13:30:25.843+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v14.py for tasks to queue
+[2023-08-23T13:30:25.845+0000] {logging_mixin.py:117} INFO - [2023-08-23T13:30:25.845+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v14.py
+[2023-08-23T13:30:25.847+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v14.py
+[2023-08-23T13:30:26.777+0000] {processor.py:727} INFO - Executed failure callback for <TaskInstance: tbf_analysis_dag_v14.create_dataproc_cluster_task manual__2023-08-23T05:07:46.845506+00:00 [up_for_retry]> in state up_for_retry
+[2023-08-23T13:30:26.779+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v14.py took 0.942 seconds
+[2023-08-23T13:31:06.017+0000] {processor.py:156} INFO - Started process (PID=26718) to work on /opt/airflow/dags/tbf_analysis_dag_v14.py
+[2023-08-23T13:31:06.019+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v14.py for tasks to queue
+[2023-08-23T13:31:06.020+0000] {logging_mixin.py:117} INFO - [2023-08-23T13:31:06.020+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v14.py
+[2023-08-23T13:31:06.022+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v14.py
+[2023-08-23T13:31:06.730+0000] {processor.py:727} INFO - Executed failure callback for <TaskInstance: tbf_analysis_dag_v14.create_dataproc_cluster_task scheduled__2023-08-23T00:00:00+00:00 [up_for_retry]> in state up_for_retry
+[2023-08-23T13:31:06.732+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v14.py took 0.719 seconds
