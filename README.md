@@ -4,7 +4,7 @@ The last few years have witnessed significant developments in North American tra
 
 ## Objective
 
-My objective was to build a robust data ingestion and processing pipeline that would deliver reliable, reproducible and clean data for analysis, insight generation and possible decision-making regarding North American Transborder trade.
+My objective was to build a robust data ingestion and processing pipeline that would deliver reliable, reproducible and clean data for analysis, insight generation and potential decision-making regarding North American Transborder trade.
 
 ## Technologies
 
