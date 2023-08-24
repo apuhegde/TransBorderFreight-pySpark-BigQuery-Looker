@@ -74,3 +74,5 @@ You are required to have the following accounts and softwares installed on your 
     ```
 
 6. Open `localhost:8080` in a browser and type username:password as admin:admin . You can now trigger your DAG and check the progress as well as the logs.
+
+7. After you're done running the entire project, destroy your cloud resources by running `terraform destroy` inside the Terraform directory (you will need to add the `force_destroy = true` option within your resource blocks in your `main.tf` file if you want Terraform to forcefully destroy the said resources even if you have data stored in the resources. I have switched this off on purpose.)
