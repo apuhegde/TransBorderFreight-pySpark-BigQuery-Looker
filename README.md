@@ -1,6 +1,6 @@
 # **Analysis of transborder freight data between the USA, Canada and Mexico**
 
-The last few years have witnessed significant developments in North American trade, including the renegotiation of NAFTA into the USMCA, trade tensions and tariff disputes due to changing governments, and the impact of the COVID-19 pandemic. I was interested in analyzing freight transport data to assess the possible effects of these events on trends in transborder trade between the three biggest countries in North America - USA, Canada and Mexico.
+The last few years have witnessed significant developments in North American trade, including the renegotiation of NAFTA into the USMCA, trade tensions and tariff disputes due to changing governments, and the impact of the COVID-19 pandemic. I was interested in analyzing freight transport data to assess the possible effects of these events on trends over a decade (2014-2023) in transborder trade between the three biggest countries in North America - USA, Canada and Mexico.
 
 ## Objective
 
@@ -31,3 +31,46 @@ The data is in .csv format and is updated on the BTS website on a monthly basis.
 ![Data pipeline overview](TBF_analysis_pipeline_overview.png)
 
 Overview of the Transborder Freight data processing pipeline
+
+## How to run the project
+
+1. Prerequisites: 
+You are required to have the following accounts and softwares installed on your system before you can begin:
+    - GCP account, GCP project and a service account that has the following permissions to the project:
+        - Viewer
+        - Storage Admin
+        - Storage Object Admin
+        - Storage Object Viewer
+        - BigQuery Admin
+        - Dataproc Administrator
+        - Dataprov Service Agent
+        - Editor 
+    Download the auth-key credentials json file for this service account and save to `~/.google/credentials/google_credentials.json`.
+    - Google SDK on local machine
+    - Docker desktop and docker compose
+    - Terraform
+
+2. Clone this github repo
+
+3. Navigate to the Terraform directory. Replace GCP details like project name, bucket name, etc. with yours, and set up cloud infrastructure using the following Terraform commands:
+    ```
+    terraform init
+    terraform plan
+    terraform apply
+    ```
+
+4. Navigate to the Airflow directory, make necessary changes to GCP project name, etc in the docker-compose.yaml and Dockerfile, and run docker compose:
+    ```
+    docker compose build
+    docker compose up airflow-init
+    docker compose up
+    ```
+
+5. To check whether docker compose has generated all necessary container, you can ssh into the worker container by running:
+
+    ```
+    docker ps
+    docker exec -it <worker-container-ID> bash
+    ```
+
+6. Open `localhost:8080` in a browser and type username:password as admin:admin . You can now trigger your DAG and check the progress as well as the logs.
