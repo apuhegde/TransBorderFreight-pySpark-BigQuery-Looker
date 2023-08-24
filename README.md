@@ -8,7 +8,7 @@ My objective was to build a robust data ingestion and processing pipeline that w
 
 ## Technologies
 
-I used the following tools to set up the pipeline:
+I used the following tools to build the pipeline:
 
 - Terraform for cloud infrastructure provisioning
 - Google Cloud Project (GCP) for:
