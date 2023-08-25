@@ -1,4 +1,4 @@
-# **Analysis of transborder freight data between the USA, Canada and Mexico**
+# **Analysis of transborder freight transport between the USA, Canada and Mexico**
 
 The last few years have witnessed significant developments in North American trade, including the renegotiation of NAFTA into the USMCA, trade tensions and tariff disputes due to changing governments, and the impact of the COVID-19 pandemic. I was interested in analyzing freight transport data to assess the possible effects of these events on trends over a decade (2014-2023) in transborder trade between the three biggest countries in North America - USA, Canada and Mexico.
 
@@ -32,7 +32,7 @@ The data is in .csv format and is updated on the BTS website on a monthly basis.
 
 Overview of the Transborder Freight data processing pipeline
 
-## How to execute the project
+## Project execution
 
 1. Prerequisites: 
 You are required to have the following accounts and softwares installed on your system before you can begin:
