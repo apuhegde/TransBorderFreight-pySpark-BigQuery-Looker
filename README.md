@@ -80,7 +80,7 @@ The variable "pip_initialization_script" in variables.tf file in the Terraform f
     docker compose up
     ```
 
-6. To check whether docker compose has generated all necessary container, you can ssh into the worker container by running:
+6. To check whether docker compose has generated all necessary containers, you can ssh into the worker container by running:
 
     ```
     docker ps
