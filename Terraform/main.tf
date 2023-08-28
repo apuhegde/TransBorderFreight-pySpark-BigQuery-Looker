@@ -1,32 +1,32 @@
 terraform {
   required_version = ">= 1.0"
-  backend "local" {}  # Can change from "local" to "gcs" (for google) or "s3" (for aws), if you would like to preserve your tf-state online
+  backend "local" {} # Can change from "local" to "gcs" (for google) or "s3" (for aws), if you would like to preserve your tf-state online
   required_providers {
     google = {
-      source  = "hashicorp/google"
+      source = "hashicorp/google"
     }
   }
 }
 
 provider "google" {
-    project = var.project
-    region = var.region
+  project = var.project
+  region  = var.region
 }
 
-# # Data Lake Bucket
-# resource "google_storage_bucket" "data_lake_bucket" {
-#   name          = "${local.data_lake_bucket}_${var.project}" # Concatenating DL bucket & Project name for unique naming
-#   location      = var.region
+# Data Lake Bucket
+resource "google_storage_bucket" "data_lake_bucket" {
+  name          = "${local.data_lake_bucket}_${var.project}" # Concatenating DL bucket & Project name for unique naming
+  location      = var.region
 
-#   storage_class = var.storage_class
-#   uniform_bucket_level_access = true
+  storage_class = var.storage_class
+  uniform_bucket_level_access = true
 
-#   versioning {
-#     enabled     = true
-#   }
+  versioning {
+    enabled     = true
+  }
 
-#   force_destroy = false
-# }
+  force_destroy = false
+}
 
 # Data Warehouse
 resource "google_bigquery_dataset" "dataset" {
@@ -34,13 +34,6 @@ resource "google_bigquery_dataset" "dataset" {
   project    = var.project
   location   = var.region
 }
-
-# #network resource
-# resource "google_compute_network" "tbf_network" {
-#   name = "terraform-network"
-#   auto_create_subnetworks = "true"
-# }
-
 
 # #VM firewall
 # resource "google_compute_firewall" "ssh-rule" {
@@ -52,7 +45,7 @@ resource "google_bigquery_dataset" "dataset" {
 #   }
 
 #   source_ranges = ["0.0.0.0/0"]
-  
+
 # }
 
 
@@ -96,16 +89,73 @@ resource "google_bigquery_dataset" "dataset" {
 #   value = "${google_compute_instance.vm_instance.network_interface.0.access_config.0.nat_ip}"
 # }
 
+resource "google_storage_bucket" "dataproc-bucket" {
+  project                     = var.project
+  name                        = "${local.data_lake_bucket}_${var.project}-temp"
+  uniform_bucket_level_access = true
+  location                    = var.region
+}
 
-/*
-resource "google_project_service" "workflows" {
-  service            = "workflows.googleapis.com"
-  disable_on_destroy = false
+resource "google_storage_bucket_iam_member" "dataproc-member" {
+  bucket = google_storage_bucket.dataproc-bucket.name
+  role   = "roles/storage.admin"
+  member = "serviceAccount:${var.google_service_acct_email}"
 }
 
 #Dataproc cluster
-resource "google_dataproc_cluster" "tbf-terraform-cluster" {
-  name     = "tbf-terraform-cluster"
-  region   = "us-central1"
+resource "google_dataproc_cluster" "tbf-dataproc-cluster" {
+  name = "${var.project}-dataproc"
+  region = var.region
+
+  cluster_config {
+    staging_bucket = google_storage_bucket.dataproc-bucket.name
+
+
+    initialization_action {
+      script = var.pip_initialization_script
+    }
+
+    # Config for master node
+    master_config {
+      num_instances = 1
+      machine_type  = var.dataproc_master_machine_type
+      disk_config {
+        boot_disk_type    = "pd-standard"
+        boot_disk_size_gb = var.dataproc_master_bootdisk
+      }
+    }
+
+    # Config for worker node
+    worker_config {
+      num_instances = var.dataproc_workers_count
+      machine_type  = var.dataproc_worker_machine_type
+      disk_config {
+        boot_disk_type    = "pd-standard"
+        boot_disk_size_gb = var.dataproc_worker_bootdisk
+      }
+    }
+
+    preemptible_worker_config {
+      num_instances = var.preemptible_worker
+    }
+
+    # config related which image to use
+    software_config {
+      image_version = var.dataproc_software_image_version
+      override_properties = {
+        "dataproc:dataproc.allow.zero.workers" = "true"
+      }
+    }
+
+    # GCE cluster config 
+    gce_cluster_config {
+      zone = "${var.region}-a"
+      service_account        = var.google_service_acct_email
+      service_account_scopes = ["useraccounts-ro", "storage-rw", "logging-write", "cloud-platform"]
+      metadata = {
+        PIP_PACKAGES = var.pip_packages
+      }
+    }
+
+  }
 }
-*/

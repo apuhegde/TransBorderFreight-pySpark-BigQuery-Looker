@@ -52,27 +52,41 @@ You are required to have the following accounts and softwares installed on your 
 
 2. Clone this github repo
 
-3. Navigate to the Terraform directory. Replace GCP details like project name, bucket name, etc. with yours, and set up cloud infrastructure using the following Terraform commands:
+3. Create a bucket on GCP and copy the file "dataproc-pip-installation.sh" into it using this code: 
+
+```
+gsutil cp <path-to-dataproc-pip-installation.sh> gs://accessory-bucket-name/scripts/dataproc-pip-installation.sh
+
+```
+For example, I have called this bucket "tbf-analysis-accessory" and my code would read:
+
+```
+gsutil cp /Users/ahegde/Job_misc/Portfolio/TransBorderFreightAnalysis/VM_project_files/TransBorderFreight-pySpark-BigQuery-Looker/Terraform/dataproc-pip-installation.sh gs://tbf-analysis-accessory/scripts/dataproc-pip-installation.sh
+```
+
+The variable "pip_initialization_script" in variables.tf file in the Terraform folder needs to be set to this GCP script path. 
+
+4. Navigate to the Terraform directory. Replace GCP details like project name, bucket name, etc. with yours, and set up cloud infrastructure using the following Terraform commands:
     ```
     terraform init
     terraform plan
     terraform apply
     ```
 
-4. Navigate to the Airflow directory, make necessary changes to GCP project name, etc in the docker-compose.yaml and Dockerfile, and run docker compose:
+5. Navigate to the Airflow directory, make necessary changes to GCP project name, etc in the docker-compose.yaml and Dockerfile, and run docker compose:
     ```
     docker compose build
     docker compose up airflow-init
     docker compose up
     ```
 
-5. To check whether docker compose has generated all necessary container, you can ssh into the worker container by running:
+6. To check whether docker compose has generated all necessary container, you can ssh into the worker container by running:
 
     ```
     docker ps
     docker exec -it <worker-container-ID> bash
     ```
 
-6. Open `localhost:8080` in a browser and type username:password as admin:admin . You can now trigger your DAG and check the progress as well as the logs.
+7. Open `localhost:8080` in a browser and type username:password as admin:admin . You can now trigger your DAG and check the progress as well as the logs.
 
-7. After you're done running the entire project, destroy your cloud resources by running `terraform destroy` inside the Terraform directory (you will need to add the `force_destroy = true` option within your resource blocks in your `main.tf` file if you want Terraform to forcefully destroy the said resources even if you have data stored in the resources. I have switched this off on purpose.)
+8. After you're done running the entire project, destroy your cloud resources by running `terraform destroy` inside the Terraform directory (you will need to add the `force_destroy = true` option within your resource blocks in your `main.tf` file if you want Terraform to forcefully destroy the said resources even if you have data stored in the resources. I have switched this off on purpose.)
