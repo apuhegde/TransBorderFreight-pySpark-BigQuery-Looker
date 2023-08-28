@@ -1,0 +1,947 @@
+[2023-08-25T01:42:47.663+0000] {processor.py:156} INFO - Started process (PID=34) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:42:47.664+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:42:47.665+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:42:47.665+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:42:48.309+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:42:48.307+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v16.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v16.py", line 158, in <module>
+    cluster_config=CLUSTER_CONFIG,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 391, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'region'
+[2023-08-25T01:42:48.311+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:42:48.332+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.672 seconds
+[2023-08-25T01:43:18.580+0000] {processor.py:156} INFO - Started process (PID=61) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:43:18.583+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:43:18.585+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:43:18.585+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:43:18.819+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:43:18.818+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v16.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v16.py", line 158, in <module>
+    cluster_config=CLUSTER_CONFIG,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 391, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'region'
+[2023-08-25T01:43:18.820+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:43:18.857+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.285 seconds
+[2023-08-25T01:43:49.036+0000] {processor.py:156} INFO - Started process (PID=88) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:43:49.039+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:43:49.040+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:43:49.040+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:43:49.279+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:43:49.277+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v16.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v16.py", line 158, in <module>
+    cluster_config=CLUSTER_CONFIG,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 391, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'region'
+[2023-08-25T01:43:49.280+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:43:49.298+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.268 seconds
+[2023-08-25T01:44:19.450+0000] {processor.py:156} INFO - Started process (PID=115) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:44:19.452+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:44:19.453+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:44:19.453+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:44:19.864+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:44:19.860+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v16.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v16.py", line 158, in <module>
+    cluster_config=CLUSTER_CONFIG,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 391, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'region'
+[2023-08-25T01:44:19.865+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:44:19.895+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.449 seconds
+[2023-08-25T01:44:50.074+0000] {processor.py:156} INFO - Started process (PID=135) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:44:50.076+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:44:50.078+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:44:50.077+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:44:50.311+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:44:50.310+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v16.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v16.py", line 158, in <module>
+    cluster_config=CLUSTER_CONFIG,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 391, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'region'
+[2023-08-25T01:44:50.313+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:44:50.378+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.309 seconds
+[2023-08-25T01:45:20.338+0000] {processor.py:156} INFO - Started process (PID=162) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:45:20.341+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:45:20.343+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:45:20.343+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:45:20.521+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:45:20.519+0000] {dagbag.py:330} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v16.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 326, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v16.py", line 158, in <module>
+    cluster_config=CLUSTER_CONFIG,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 391, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'region'
+[2023-08-25T01:45:20.522+0000] {processor.py:770} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:45:20.540+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.215 seconds
+[2023-08-25T01:45:48.549+0000] {processor.py:156} INFO - Started process (PID=191) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:45:48.552+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:45:48.555+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:45:48.555+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:45:48.712+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:45:48.828+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:45:48.827+0000] {manager.py:507} INFO - Created Permission View: can read on DAG:tbf_analysis_dag_v16
+[2023-08-25T01:45:48.832+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:45:48.832+0000] {manager.py:507} INFO - Created Permission View: can edit on DAG:tbf_analysis_dag_v16
+[2023-08-25T01:45:48.835+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:45:48.835+0000] {manager.py:507} INFO - Created Permission View: can delete on DAG:tbf_analysis_dag_v16
+[2023-08-25T01:45:48.836+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:45:48.836+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:45:48.843+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:45:48.843+0000] {dag.py:2594} INFO - Creating ORM DAG for tbf_analysis_dag_v16
+[2023-08-25T01:45:48.849+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:45:48.849+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to 2023-08-25T00:00:00+00:00, run_after=2023-08-25T00:00:00+00:00
+[2023-08-25T01:45:48.860+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.315 seconds
+[2023-08-25T01:46:19.089+0000] {processor.py:156} INFO - Started process (PID=226) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:46:19.093+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:46:19.094+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:46:19.094+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:46:19.240+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:46:19.261+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:46:19.261+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:46:19.275+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:46:19.275+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:46:19.286+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.205 seconds
+[2023-08-25T01:46:49.400+0000] {processor.py:156} INFO - Started process (PID=256) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:46:49.403+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:46:49.404+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:46:49.404+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:46:49.538+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:46:49.557+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:46:49.557+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:46:49.570+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:46:49.570+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:46:49.581+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.183 seconds
+[2023-08-25T01:47:19.933+0000] {processor.py:156} INFO - Started process (PID=276) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:47:19.938+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:47:19.939+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:47:19.939+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:47:20.086+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:47:20.105+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:47:20.105+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:47:20.121+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:47:20.121+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:47:20.132+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.204 seconds
+[2023-08-25T01:47:50.337+0000] {processor.py:156} INFO - Started process (PID=304) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:47:50.341+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:47:50.342+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:47:50.342+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:47:50.467+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:47:50.486+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:47:50.486+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:47:50.500+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:47:50.500+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:47:50.510+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.178 seconds
+[2023-08-25T01:48:20.688+0000] {processor.py:156} INFO - Started process (PID=331) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:48:20.692+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:48:20.693+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:48:20.693+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:48:20.821+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:48:20.841+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:48:20.840+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:48:20.862+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:48:20.862+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:48:20.876+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.194 seconds
+[2023-08-25T01:48:51.121+0000] {processor.py:156} INFO - Started process (PID=360) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:48:51.124+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:48:51.125+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:48:51.125+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:48:51.257+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:48:51.276+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:48:51.276+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:48:51.289+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:48:51.289+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:48:51.299+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.183 seconds
+[2023-08-25T01:49:21.546+0000] {processor.py:156} INFO - Started process (PID=388) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:49:21.550+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:49:21.551+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:49:21.551+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:49:21.685+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:49:21.704+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:49:21.703+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:49:21.717+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:49:21.717+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:49:21.727+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.186 seconds
+[2023-08-25T01:49:51.996+0000] {processor.py:156} INFO - Started process (PID=417) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:49:51.999+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:49:52.001+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:49:52.001+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:49:52.147+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:49:52.167+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:49:52.167+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:49:52.182+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:49:52.182+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:49:52.192+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.204 seconds
+[2023-08-25T01:50:22.369+0000] {processor.py:156} INFO - Started process (PID=445) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:50:22.370+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:50:22.371+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:50:22.371+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:50:22.521+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:50:22.540+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:50:22.540+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:50:22.554+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:50:22.554+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:50:22.566+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.200 seconds
+[2023-08-25T01:50:52.724+0000] {processor.py:156} INFO - Started process (PID=472) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:50:52.725+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:50:52.726+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:50:52.726+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:50:52.868+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:50:52.899+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:50:52.898+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:50:52.922+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:50:52.922+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:50:52.936+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.215 seconds
+[2023-08-25T01:51:23.162+0000] {processor.py:156} INFO - Started process (PID=494) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:51:23.166+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:51:23.168+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:51:23.168+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:51:23.368+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:51:23.391+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:51:23.391+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:51:23.407+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:51:23.407+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:51:23.418+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.266 seconds
+[2023-08-25T01:51:53.601+0000] {processor.py:156} INFO - Started process (PID=522) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:51:53.603+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:51:53.605+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:51:53.604+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:51:53.758+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:51:53.778+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:51:53.778+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:51:53.792+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:51:53.792+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:51:53.803+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.209 seconds
+[2023-08-25T01:52:24.044+0000] {processor.py:156} INFO - Started process (PID=549) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:52:24.048+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:52:24.050+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:52:24.050+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:52:24.216+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:52:24.239+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:52:24.238+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:52:24.255+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:52:24.255+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:52:24.266+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.232 seconds
+[2023-08-25T01:52:54.502+0000] {processor.py:156} INFO - Started process (PID=577) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:52:54.504+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:52:54.505+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:52:54.505+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:52:54.630+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:52:54.650+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:52:54.650+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:52:54.663+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:52:54.663+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:52:54.673+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.176 seconds
+[2023-08-25T01:53:24.856+0000] {processor.py:156} INFO - Started process (PID=605) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:53:24.859+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:53:24.861+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:53:24.861+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:53:25.024+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:53:25.046+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:53:25.046+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:53:25.061+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:53:25.061+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:53:25.072+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.226 seconds
+[2023-08-25T01:53:55.290+0000] {processor.py:156} INFO - Started process (PID=633) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:53:55.292+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:53:55.293+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:53:55.292+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:53:55.410+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:53:55.428+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:53:55.428+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:53:55.442+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:53:55.442+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:53:55.452+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.165 seconds
+[2023-08-25T01:54:25.592+0000] {processor.py:156} INFO - Started process (PID=659) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:54:25.594+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:54:25.595+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:54:25.595+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:54:25.730+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:54:25.751+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:54:25.750+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:54:25.766+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:54:25.766+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:54:25.777+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.189 seconds
+[2023-08-25T01:54:56.005+0000] {processor.py:156} INFO - Started process (PID=682) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:54:56.009+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:54:56.010+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:54:56.010+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:54:56.135+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:54:56.152+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:54:56.152+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:54:56.166+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:54:56.166+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:54:56.176+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.175 seconds
+[2023-08-25T01:55:26.319+0000] {processor.py:156} INFO - Started process (PID=709) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:55:26.322+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:55:26.324+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:55:26.324+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:55:26.498+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:55:26.520+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:55:26.520+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:55:26.535+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:55:26.535+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:55:26.546+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.235 seconds
+[2023-08-25T01:55:56.801+0000] {processor.py:156} INFO - Started process (PID=738) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:55:56.804+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:55:56.806+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:55:56.805+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:55:56.947+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:55:56.966+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:55:56.965+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:55:56.979+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:55:56.979+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:55:56.989+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.193 seconds
+[2023-08-25T01:56:27.183+0000] {processor.py:156} INFO - Started process (PID=768) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:56:27.187+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:56:27.189+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:56:27.188+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:56:27.344+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:56:27.364+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:56:27.364+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:56:27.378+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:56:27.378+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:56:27.389+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.213 seconds
+[2023-08-25T01:56:57.613+0000] {processor.py:156} INFO - Started process (PID=796) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:56:57.616+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:56:57.618+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:56:57.618+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:56:57.756+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:56:57.776+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:56:57.776+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:56:57.791+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:56:57.791+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:56:57.802+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.195 seconds
+[2023-08-25T01:57:28.086+0000] {processor.py:156} INFO - Started process (PID=823) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:57:28.090+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:57:28.091+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:57:28.091+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:57:28.225+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:57:28.243+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:57:28.243+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:57:28.257+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:57:28.257+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:57:28.268+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.187 seconds
+[2023-08-25T01:57:58.439+0000] {processor.py:156} INFO - Started process (PID=852) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:57:58.441+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:57:58.442+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:57:58.442+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:57:58.602+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:57:58.632+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:57:58.632+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:57:58.653+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:57:58.652+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:57:58.685+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.248 seconds
+[2023-08-25T01:58:28.878+0000] {processor.py:156} INFO - Started process (PID=872) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:58:28.882+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:58:28.884+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:58:28.884+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:58:29.029+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:58:29.048+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:58:29.048+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:58:29.064+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:58:29.064+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:58:29.074+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.203 seconds
+[2023-08-25T01:58:59.384+0000] {processor.py:156} INFO - Started process (PID=900) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:58:59.387+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:58:59.388+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:58:59.388+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:58:59.512+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:58:59.531+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:58:59.531+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:58:59.544+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:58:59.544+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:58:59.554+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.178 seconds
+[2023-08-25T01:59:29.730+0000] {processor.py:156} INFO - Started process (PID=928) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:59:29.732+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T01:59:29.733+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:59:29.733+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:59:29.938+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T01:59:29.964+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:59:29.964+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T01:59:29.981+0000] {logging_mixin.py:117} INFO - [2023-08-25T01:59:29.981+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T01:59:29.992+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.267 seconds
+[2023-08-25T02:00:00.147+0000] {processor.py:156} INFO - Started process (PID=955) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:00:00.148+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:00:00.149+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:00:00.149+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:00:00.266+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:00:00.285+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:00:00.284+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:00:00.298+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:00:00.298+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:00:00.308+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.165 seconds
+[2023-08-25T02:00:30.695+0000] {processor.py:156} INFO - Started process (PID=982) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:00:30.697+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:00:30.699+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:00:30.698+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:00:30.845+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:00:30.865+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:00:30.865+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:00:30.878+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:00:30.878+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:00:30.889+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.197 seconds
+[2023-08-25T02:01:00.994+0000] {processor.py:156} INFO - Started process (PID=1010) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:01:00.996+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:01:00.997+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:01:00.997+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:01:01.140+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:01:01.162+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:01:01.162+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:01:01.177+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:01:01.177+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:01:01.188+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.197 seconds
+[2023-08-25T02:01:31.493+0000] {processor.py:156} INFO - Started process (PID=1038) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:01:31.495+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:01:31.496+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:01:31.496+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:01:31.657+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:01:31.682+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:01:31.682+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:01:31.705+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:01:31.705+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:01:31.718+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.228 seconds
+[2023-08-25T02:02:01.786+0000] {processor.py:156} INFO - Started process (PID=1057) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:02:01.788+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:02:01.789+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:02:01.789+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:02:01.954+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:02:01.976+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:02:01.975+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:02:01.992+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:02:01.992+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:02:02.003+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.221 seconds
+[2023-08-25T02:02:32.408+0000] {processor.py:156} INFO - Started process (PID=1084) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:02:32.411+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:02:32.413+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:02:32.413+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:02:32.547+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:02:32.565+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:02:32.565+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:02:32.578+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:02:32.578+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:02:32.588+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.185 seconds
+[2023-08-25T02:03:02.828+0000] {processor.py:156} INFO - Started process (PID=1112) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:03:02.832+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:03:02.834+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:03:02.833+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:03:03.050+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:03:03.088+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:03:03.087+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:03:03.118+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:03:03.118+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:03:03.132+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.307 seconds
+[2023-08-25T02:03:33.296+0000] {processor.py:156} INFO - Started process (PID=1140) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:03:33.300+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:03:33.301+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:03:33.301+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:03:33.435+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:03:33.453+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:03:33.453+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:03:33.466+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:03:33.466+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:03:33.476+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.188 seconds
+[2023-08-25T02:04:03.807+0000] {processor.py:156} INFO - Started process (PID=1168) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:04:03.811+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:04:03.812+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:04:03.812+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:04:03.997+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:04:04.019+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:04:04.019+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:04:04.035+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:04:04.035+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:04:04.046+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.245 seconds
+[2023-08-25T02:04:34.164+0000] {processor.py:156} INFO - Started process (PID=1196) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:04:34.168+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:04:34.170+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:04:34.170+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:04:34.304+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:04:34.323+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:04:34.323+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:04:34.337+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:04:34.337+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:04:34.347+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.190 seconds
+[2023-08-25T02:05:04.673+0000] {processor.py:156} INFO - Started process (PID=1224) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:05:04.676+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:05:04.677+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:05:04.677+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:05:04.847+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:05:04.875+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:05:04.875+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:05:04.893+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:05:04.893+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:05:04.905+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.241 seconds
+[2023-08-25T02:05:35.028+0000] {processor.py:156} INFO - Started process (PID=1246) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:05:35.033+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:05:35.035+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:05:35.035+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:05:35.195+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:05:35.219+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:05:35.219+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:05:35.235+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:05:35.235+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:05:35.246+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.226 seconds
+[2023-08-25T02:06:05.346+0000] {processor.py:156} INFO - Started process (PID=1273) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:06:05.350+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:06:05.351+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:06:05.351+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:06:05.487+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:06:05.508+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:06:05.508+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:06:05.521+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:06:05.521+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:06:05.532+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.192 seconds
+[2023-08-25T02:06:35.649+0000] {processor.py:156} INFO - Started process (PID=1301) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:06:35.651+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:06:35.652+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:06:35.652+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:06:35.799+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:06:35.820+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:06:35.820+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:06:35.836+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:06:35.836+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:06:35.847+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.201 seconds
+[2023-08-25T02:07:06.219+0000] {processor.py:156} INFO - Started process (PID=1329) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:07:06.222+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:07:06.223+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:07:06.223+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:07:06.353+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:07:06.371+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:07:06.371+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:07:06.386+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:07:06.386+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:07:06.397+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.182 seconds
+[2023-08-25T02:07:36.555+0000] {processor.py:156} INFO - Started process (PID=1357) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:07:36.557+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:07:36.558+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:07:36.558+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:07:36.725+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:07:36.746+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:07:36.746+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:07:36.762+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:07:36.762+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:07:36.773+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.222 seconds
+[2023-08-25T02:08:07.024+0000] {processor.py:156} INFO - Started process (PID=1385) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:08:07.026+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:08:07.026+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:08:07.026+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:08:07.276+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:08:07.328+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:08:07.328+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:08:07.344+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:08:07.344+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:08:07.356+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.336 seconds
+[2023-08-25T02:08:37.733+0000] {processor.py:156} INFO - Started process (PID=1404) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:08:37.737+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:08:37.738+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:08:37.738+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:08:37.887+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:08:37.906+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:08:37.906+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:08:37.920+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:08:37.920+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:08:37.930+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.205 seconds
+[2023-08-25T02:09:08.089+0000] {processor.py:156} INFO - Started process (PID=1432) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:09:08.093+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:09:08.094+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:09:08.094+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:09:08.248+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:09:08.270+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:09:08.270+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:09:08.286+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:09:08.285+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:09:08.296+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.214 seconds
+[2023-08-25T02:09:38.575+0000] {processor.py:156} INFO - Started process (PID=1460) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:09:38.577+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:09:38.578+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:09:38.578+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:09:38.722+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:09:38.742+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:09:38.741+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:09:38.755+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:09:38.755+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:09:38.765+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.194 seconds
+[2023-08-25T02:10:08.894+0000] {processor.py:156} INFO - Started process (PID=1488) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:10:08.897+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:10:08.899+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:10:08.899+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:10:09.036+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:10:09.058+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:10:09.058+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:10:09.074+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:10:09.074+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:10:09.086+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.197 seconds
+[2023-08-25T02:10:39.525+0000] {processor.py:156} INFO - Started process (PID=1516) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:10:39.530+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:10:39.531+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:10:39.531+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:10:39.701+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:10:39.723+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:10:39.723+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:10:39.738+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:10:39.738+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:10:39.750+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.233 seconds
+[2023-08-25T02:11:09.906+0000] {processor.py:156} INFO - Started process (PID=1545) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:11:09.910+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:11:09.911+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:11:09.911+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:11:10.033+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:11:10.051+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:11:10.051+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:11:10.065+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:11:10.065+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:11:10.076+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.175 seconds
+[2023-08-25T02:11:40.462+0000] {processor.py:156} INFO - Started process (PID=1572) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:11:40.466+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:11:40.468+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:11:40.467+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:11:40.652+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:11:40.673+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:11:40.673+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:11:40.688+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:11:40.688+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:11:40.699+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.245 seconds
+[2023-08-25T02:12:10.839+0000] {processor.py:156} INFO - Started process (PID=1591) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:12:10.843+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:12:10.845+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:12:10.844+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:12:10.979+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:12:10.999+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:12:10.999+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:12:11.014+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:12:11.014+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:12:11.025+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.192 seconds
+[2023-08-25T02:12:41.232+0000] {processor.py:156} INFO - Started process (PID=1619) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:12:41.234+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:12:41.235+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:12:41.235+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:12:41.394+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:12:41.418+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:12:41.418+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:12:41.434+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:12:41.434+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:12:41.445+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.216 seconds
+[2023-08-25T02:13:11.526+0000] {processor.py:156} INFO - Started process (PID=1647) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:13:11.528+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:13:11.529+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:13:11.529+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:13:11.652+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:13:11.673+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:13:11.673+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:13:11.687+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:13:11.687+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:13:11.699+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.176 seconds
+[2023-08-25T02:13:42.027+0000] {processor.py:156} INFO - Started process (PID=1674) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:13:42.029+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:13:42.030+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:13:42.030+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:13:42.198+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:13:42.219+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:13:42.219+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:13:42.234+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:13:42.234+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:13:42.246+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.223 seconds
+[2023-08-25T02:14:12.357+0000] {processor.py:156} INFO - Started process (PID=1703) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:14:12.358+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:14:12.359+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:14:12.359+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:14:12.475+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:14:12.494+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:14:12.493+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:14:12.509+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:14:12.509+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:14:12.520+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.166 seconds
+[2023-08-25T02:14:42.691+0000] {processor.py:156} INFO - Started process (PID=1731) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:14:42.693+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:14:42.695+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:14:42.695+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:14:42.862+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:14:42.883+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:14:42.882+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:14:42.897+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:14:42.897+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:14:42.907+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.224 seconds
+[2023-08-25T02:15:13.119+0000] {processor.py:156} INFO - Started process (PID=1758) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:15:13.123+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:15:13.125+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:15:13.124+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:15:13.284+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:15:13.305+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:15:13.305+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:15:13.320+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:15:13.320+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:15:13.332+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.222 seconds
+[2023-08-25T02:15:43.515+0000] {processor.py:156} INFO - Started process (PID=1778) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:15:43.517+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:15:43.519+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:15:43.519+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:15:43.716+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:15:43.743+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:15:43.743+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:15:43.760+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:15:43.760+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:15:43.772+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.263 seconds
+[2023-08-25T02:16:13.888+0000] {processor.py:156} INFO - Started process (PID=1806) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:16:13.892+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:16:13.893+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:16:13.893+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:16:14.022+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:16:14.040+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:16:14.040+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:16:14.053+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:16:14.053+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:16:14.064+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.179 seconds
+[2023-08-25T02:16:44.378+0000] {processor.py:156} INFO - Started process (PID=1833) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:16:44.380+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:16:44.381+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:16:44.381+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:16:44.503+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:16:44.521+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:16:44.521+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:16:44.534+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:16:44.534+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:16:44.545+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.172 seconds
+[2023-08-25T02:17:14.644+0000] {processor.py:156} INFO - Started process (PID=1861) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:17:14.646+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:17:14.647+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:17:14.647+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:17:14.799+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:17:14.820+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:17:14.820+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:17:14.835+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:17:14.835+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:17:14.847+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.206 seconds
+[2023-08-25T02:17:44.915+0000] {processor.py:156} INFO - Started process (PID=1889) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:17:44.918+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:17:44.920+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:17:44.920+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:17:45.048+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:17:45.066+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:17:45.066+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:17:45.080+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:17:45.080+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:17:45.090+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.181 seconds
+[2023-08-25T02:18:15.294+0000] {processor.py:156} INFO - Started process (PID=1916) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:18:15.298+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:18:15.300+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:18:15.300+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:18:15.453+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:18:15.473+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:18:15.473+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:18:15.488+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:18:15.488+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:18:15.499+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.212 seconds
+[2023-08-25T02:18:45.792+0000] {processor.py:156} INFO - Started process (PID=1944) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:18:45.795+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:18:45.797+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:18:45.797+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:18:45.932+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:18:45.950+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:18:45.950+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:18:45.963+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:18:45.963+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:18:45.974+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.188 seconds
+[2023-08-25T02:19:16.274+0000] {processor.py:156} INFO - Started process (PID=1964) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:19:16.276+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:19:16.279+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:19:16.279+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:19:16.439+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:19:16.459+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:19:16.458+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:19:16.472+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:19:16.472+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:19:16.484+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.214 seconds
+[2023-08-25T02:19:46.712+0000] {processor.py:156} INFO - Started process (PID=1990) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:19:46.716+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:19:46.718+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:19:46.718+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:19:46.877+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:19:46.897+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:19:46.897+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:19:46.912+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:19:46.912+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:19:46.924+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.222 seconds
+[2023-08-25T02:20:17.155+0000] {processor.py:156} INFO - Started process (PID=2018) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:20:17.159+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:20:17.162+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:20:17.161+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:20:17.296+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:20:17.315+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:20:17.314+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:20:17.328+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:20:17.328+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:20:17.339+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.191 seconds
+[2023-08-25T02:20:47.470+0000] {processor.py:156} INFO - Started process (PID=2045) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:20:47.472+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:20:47.474+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:20:47.473+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:20:47.671+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:20:47.694+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:20:47.694+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:20:47.710+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:20:47.710+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:20:47.721+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.257 seconds
+[2023-08-25T02:21:17.955+0000] {processor.py:156} INFO - Started process (PID=2073) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:21:17.960+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:21:17.961+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:21:17.961+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:21:18.091+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:21:18.109+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:21:18.109+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:21:18.123+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:21:18.123+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:21:18.133+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.183 seconds
+[2023-08-25T02:21:48.373+0000] {processor.py:156} INFO - Started process (PID=2103) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:21:48.377+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:21:48.379+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:21:48.379+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:21:48.548+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:21:48.585+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:21:48.585+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:21:48.604+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:21:48.604+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:21:48.615+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.250 seconds
+[2023-08-25T02:22:18.855+0000] {processor.py:156} INFO - Started process (PID=2130) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:22:18.859+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:22:18.860+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:22:18.860+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:22:18.996+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:22:19.014+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:22:19.014+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:22:19.027+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:22:19.027+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:22:19.038+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.189 seconds
+[2023-08-25T02:22:49.263+0000] {processor.py:156} INFO - Started process (PID=2156) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:22:49.264+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:22:49.265+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:22:49.265+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:22:49.421+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:22:49.443+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:22:49.443+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:22:49.460+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:22:49.460+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:22:49.475+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.216 seconds
+[2023-08-25T02:23:19.661+0000] {processor.py:156} INFO - Started process (PID=2176) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:23:19.663+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:23:19.666+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:23:19.666+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:23:19.820+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:23:19.850+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:23:19.850+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:23:19.866+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:23:19.866+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:23:19.879+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.224 seconds
+[2023-08-25T02:23:50.083+0000] {processor.py:156} INFO - Started process (PID=2203) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:23:50.084+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:23:50.085+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:23:50.085+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:23:50.237+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:23:50.258+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:23:50.258+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:23:50.273+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:23:50.273+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:23:50.285+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.206 seconds
+[2023-08-25T02:24:20.462+0000] {processor.py:156} INFO - Started process (PID=2231) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:24:20.464+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:24:20.466+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:24:20.466+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:24:20.640+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:24:20.664+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:24:20.664+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:24:20.681+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:24:20.681+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:24:20.692+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.235 seconds
+[2023-08-25T02:24:50.893+0000] {processor.py:156} INFO - Started process (PID=2257) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:24:50.897+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:24:50.898+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:24:50.897+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:24:51.049+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:24:51.071+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:24:51.071+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:24:51.086+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:24:51.086+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:24:51.097+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.207 seconds
+[2023-08-25T02:25:21.366+0000] {processor.py:156} INFO - Started process (PID=2285) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:25:21.367+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:25:21.368+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:25:21.368+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:25:21.509+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:25:21.531+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:25:21.531+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:25:21.552+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:25:21.552+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:25:21.565+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.202 seconds
+[2023-08-25T02:25:51.676+0000] {processor.py:156} INFO - Started process (PID=2312) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:25:51.678+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:25:51.679+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:25:51.679+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:25:51.830+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:25:51.852+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:25:51.852+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:25:51.868+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:25:51.868+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:25:51.879+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.208 seconds
+[2023-08-25T02:26:22.115+0000] {processor.py:156} INFO - Started process (PID=2330) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:26:22.117+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:26:22.118+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:26:22.118+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:26:22.237+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:26:22.256+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:26:22.256+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:26:22.269+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:26:22.269+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:26:22.280+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.167 seconds
+[2023-08-25T02:26:52.437+0000] {processor.py:156} INFO - Started process (PID=2357) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:26:52.439+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:26:52.441+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:26:52.440+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:26:52.619+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:26:52.641+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:26:52.641+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:26:52.658+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:26:52.658+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:26:52.670+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.237 seconds
+[2023-08-25T02:27:22.926+0000] {processor.py:156} INFO - Started process (PID=2387) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:27:22.929+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:27:22.931+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:27:22.930+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:27:23.073+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:27:23.093+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:27:23.093+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:27:23.106+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:27:23.106+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:27:23.117+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.199 seconds
+[2023-08-25T02:27:53.402+0000] {processor.py:156} INFO - Started process (PID=2415) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:27:53.405+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:27:53.407+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:27:53.406+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:27:53.567+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:27:53.590+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:27:53.590+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:27:53.606+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:27:53.606+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:27:53.616+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.222 seconds
+[2023-08-25T02:28:23.837+0000] {processor.py:156} INFO - Started process (PID=2443) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:28:23.841+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:28:23.843+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:28:23.842+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:28:23.973+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:28:23.991+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:28:23.991+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:28:24.004+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:28:24.004+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:28:24.015+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.185 seconds
+[2023-08-25T02:28:54.272+0000] {processor.py:156} INFO - Started process (PID=2471) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:28:54.276+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:28:54.277+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:28:54.277+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:28:54.401+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:28:54.419+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:28:54.419+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:28:54.432+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:28:54.432+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:28:54.442+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.175 seconds
+[2023-08-25T02:29:24.580+0000] {processor.py:156} INFO - Started process (PID=2499) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:29:24.582+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:29:24.584+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:29:24.584+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:29:24.737+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:29:24.758+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:29:24.758+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:29:24.773+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:29:24.773+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:29:24.784+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.208 seconds
+[2023-08-25T02:29:55.064+0000] {processor.py:156} INFO - Started process (PID=2519) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:29:55.066+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:29:55.067+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:29:55.066+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:29:55.199+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:29:55.217+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:29:55.217+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:29:55.231+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:29:55.231+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:29:55.242+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.180 seconds
+[2023-08-25T02:30:25.473+0000] {processor.py:156} INFO - Started process (PID=2547) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:30:25.478+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:30:25.480+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:30:25.480+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:30:25.669+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:30:25.693+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:30:25.692+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:30:25.708+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:30:25.708+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:30:25.720+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.256 seconds
+[2023-08-25T02:30:55.845+0000] {processor.py:156} INFO - Started process (PID=2575) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:30:55.849+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:30:55.851+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:30:55.850+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:30:55.988+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:30:56.009+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:30:56.009+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:30:56.025+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:30:56.025+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:30:56.035+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.197 seconds
+[2023-08-25T02:31:26.280+0000] {processor.py:156} INFO - Started process (PID=2603) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:31:26.283+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:31:26.284+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:31:26.284+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:31:26.445+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:31:26.467+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:31:26.467+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:31:26.483+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:31:26.483+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:31:26.493+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.218 seconds
+[2023-08-25T02:31:56.584+0000] {processor.py:156} INFO - Started process (PID=2631) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:31:56.586+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:31:56.587+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:31:56.587+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:31:56.717+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:31:56.743+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:31:56.742+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:31:56.756+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:31:56.756+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:31:56.769+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.190 seconds
+[2023-08-25T02:32:27.014+0000] {processor.py:156} INFO - Started process (PID=2659) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:32:27.015+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:32:27.016+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:32:27.016+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:32:27.135+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:32:27.154+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:32:27.154+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:32:27.167+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:32:27.167+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:32:27.177+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.164 seconds
+[2023-08-25T02:32:57.296+0000] {processor.py:156} INFO - Started process (PID=2686) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:32:57.298+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:32:57.298+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:32:57.298+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:32:57.429+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:32:57.448+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:32:57.448+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:32:57.461+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:32:57.461+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:32:57.471+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.177 seconds
+[2023-08-25T02:33:27.606+0000] {processor.py:156} INFO - Started process (PID=2705) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:33:27.609+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:33:27.611+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:33:27.611+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:33:27.735+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:33:27.753+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:33:27.753+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:33:27.766+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:33:27.766+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:33:27.777+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.176 seconds
+[2023-08-25T02:33:58.034+0000] {processor.py:156} INFO - Started process (PID=2734) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:33:58.035+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:33:58.036+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:33:58.036+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:33:58.156+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:33:58.173+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:33:58.173+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:33:58.186+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:33:58.186+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:33:58.198+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.167 seconds
+[2023-08-25T02:34:28.330+0000] {processor.py:156} INFO - Started process (PID=2762) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:34:28.335+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:34:28.337+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:34:28.336+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:34:28.526+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:34:28.549+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:34:28.549+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:34:28.568+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:34:28.568+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:34:28.579+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.257 seconds
+[2023-08-25T02:34:58.759+0000] {processor.py:156} INFO - Started process (PID=2790) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:34:58.762+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:34:58.764+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:34:58.764+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:34:58.909+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:34:58.928+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:34:58.928+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:34:58.942+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:34:58.941+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:34:58.952+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.199 seconds
+[2023-08-25T02:35:29.205+0000] {processor.py:156} INFO - Started process (PID=2818) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:35:29.208+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:35:29.209+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:35:29.209+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:35:29.408+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:35:29.433+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:35:29.433+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:35:29.450+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:35:29.450+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:35:29.462+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.262 seconds
+[2023-08-25T02:35:59.603+0000] {processor.py:156} INFO - Started process (PID=2846) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:35:59.607+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:35:59.609+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:35:59.609+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:35:59.774+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:35:59.796+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:35:59.795+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:35:59.812+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:35:59.812+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:35:59.823+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.227 seconds
+[2023-08-25T02:36:30.095+0000] {processor.py:156} INFO - Started process (PID=2874) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:36:30.096+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:36:30.097+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:36:30.097+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:36:30.222+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:36:30.241+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:36:30.241+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:36:30.256+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:36:30.255+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:36:30.267+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.175 seconds
+[2023-08-25T02:37:00.555+0000] {processor.py:156} INFO - Started process (PID=2893) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:37:00.559+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:37:00.562+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:37:00.561+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:37:00.728+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:37:00.751+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:37:00.751+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:37:00.768+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:37:00.768+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:37:00.781+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.235 seconds
+[2023-08-25T02:37:30.888+0000] {processor.py:156} INFO - Started process (PID=2921) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:37:30.891+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:37:30.892+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:37:30.892+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:37:31.053+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:37:31.074+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:37:31.074+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:37:31.090+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:37:31.090+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:37:31.102+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.218 seconds
+[2023-08-25T02:38:01.346+0000] {processor.py:156} INFO - Started process (PID=2950) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:38:01.348+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:38:01.349+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:38:01.349+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:38:01.493+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:38:01.512+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:38:01.512+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:38:01.527+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:38:01.527+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:38:01.538+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.196 seconds
+[2023-08-25T02:38:31.686+0000] {processor.py:156} INFO - Started process (PID=2978) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:38:31.690+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:38:31.692+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:38:31.692+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:38:31.827+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:38:31.846+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:38:31.845+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:38:31.860+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:38:31.859+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:38:31.870+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.191 seconds
+[2023-08-25T02:39:02.148+0000] {processor.py:156} INFO - Started process (PID=3007) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:39:02.150+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:39:02.151+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:39:02.151+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:39:02.331+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:39:02.355+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:39:02.355+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:39:02.372+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:39:02.372+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:39:02.384+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.241 seconds
+[2023-08-25T02:39:32.471+0000] {processor.py:156} INFO - Started process (PID=3035) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:39:32.472+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:39:32.473+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:39:32.473+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:39:32.606+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:39:32.626+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:39:32.626+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:39:32.641+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:39:32.641+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:39:32.652+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.184 seconds
+[2023-08-25T02:40:02.942+0000] {processor.py:156} INFO - Started process (PID=3063) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:40:02.945+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:40:02.947+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:40:02.947+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:40:03.160+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:40:03.184+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:40:03.183+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:40:03.200+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:40:03.200+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:40:03.212+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.273 seconds
+[2023-08-25T02:40:33.551+0000] {processor.py:156} INFO - Started process (PID=3082) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:40:33.553+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:40:33.553+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:40:33.553+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:40:33.773+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:40:33.801+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:40:33.801+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:40:33.827+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:40:33.827+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:40:33.842+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.296 seconds
+[2023-08-25T02:41:04.110+0000] {processor.py:156} INFO - Started process (PID=3110) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:41:04.113+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:41:04.114+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:41:04.114+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:41:04.279+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:41:04.302+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:41:04.302+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:41:04.318+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:41:04.318+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:41:04.329+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.224 seconds
+[2023-08-25T02:41:34.683+0000] {processor.py:156} INFO - Started process (PID=3137) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:41:34.686+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:41:34.688+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:41:34.688+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:41:34.829+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:41:34.849+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:41:34.849+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:41:34.863+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:41:34.863+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:41:34.874+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.198 seconds
+[2023-08-25T02:42:04.977+0000] {processor.py:156} INFO - Started process (PID=3165) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:42:04.981+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:42:04.983+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:42:04.983+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:42:05.145+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:42:05.167+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:42:05.167+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:42:05.183+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:42:05.183+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:42:05.194+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.226 seconds
+[2023-08-25T02:42:35.537+0000] {processor.py:156} INFO - Started process (PID=3193) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:42:35.540+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:42:35.541+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:42:35.541+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:42:35.671+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:42:35.689+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:42:35.689+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:42:35.702+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:42:35.702+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:42:35.714+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.183 seconds
+[2023-08-25T02:43:05.987+0000] {processor.py:156} INFO - Started process (PID=3220) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:43:05.990+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:43:05.992+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:43:05.991+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:43:06.124+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:43:06.142+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:43:06.142+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:43:06.155+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:43:06.155+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:43:06.164+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.182 seconds
+[2023-08-25T02:43:36.292+0000] {processor.py:156} INFO - Started process (PID=3249) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:43:36.293+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:43:36.294+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:43:36.294+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:43:36.405+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:43:36.423+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:43:36.423+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:43:36.436+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:43:36.435+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:43:36.446+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.157 seconds
+[2023-08-25T02:44:06.613+0000] {processor.py:156} INFO - Started process (PID=3268) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:44:06.615+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:44:06.617+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:44:06.617+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:44:06.779+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:44:06.800+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:44:06.799+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:44:06.815+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:44:06.815+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:44:06.826+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.218 seconds
+[2023-08-25T02:44:37.157+0000] {processor.py:156} INFO - Started process (PID=3296) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:44:37.160+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:44:37.161+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:44:37.161+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:44:37.288+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:44:37.306+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:44:37.306+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:44:37.319+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:44:37.319+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:44:37.329+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.177 seconds
+[2023-08-25T02:45:07.544+0000] {processor.py:156} INFO - Started process (PID=3325) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:45:07.549+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:45:07.552+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:45:07.552+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:45:07.692+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:45:07.712+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:45:07.711+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:45:07.727+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:45:07.727+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:45:07.739+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.200 seconds
+[2023-08-25T02:45:38.008+0000] {processor.py:156} INFO - Started process (PID=3352) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:45:38.010+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:45:38.011+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:45:38.011+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:45:38.177+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:45:38.208+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:45:38.204+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:45:38.231+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:45:38.231+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:45:38.246+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.241 seconds
+[2023-08-25T02:46:08.390+0000] {processor.py:156} INFO - Started process (PID=3380) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:46:08.392+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:46:08.393+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:46:08.393+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:46:08.528+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:46:08.546+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:46:08.546+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:46:08.559+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:46:08.559+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:46:08.570+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.184 seconds
+[2023-08-25T02:46:38.900+0000] {processor.py:156} INFO - Started process (PID=3407) to work on /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:46:38.904+0000] {processor.py:758} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v16.py for tasks to queue
+[2023-08-25T02:46:38.907+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:46:38.907+0000] {dagbag.py:525} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:46:39.110+0000] {processor.py:768} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v16']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v16.py
+[2023-08-25T02:46:39.135+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:46:39.135+0000] {dag.py:2573} INFO - Sync 1 DAGs
+[2023-08-25T02:46:39.152+0000] {logging_mixin.py:117} INFO - [2023-08-25T02:46:39.152+0000] {dag.py:3328} INFO - Setting next_dagrun for tbf_analysis_dag_v16 to None, run_after=None
+[2023-08-25T02:46:39.165+0000] {processor.py:178} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v16.py took 0.272 seconds

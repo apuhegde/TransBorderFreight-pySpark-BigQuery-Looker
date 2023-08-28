@@ -1,0 +1,28 @@
+[2023-08-28T06:29:18.592+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2023-08-28T06:29:18.620+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tbf_analysis_dag_v21.transformations.submit_pyspark_job2 scheduled__2023-08-28T00:00:00+00:00 [queued]>
+[2023-08-28T06:29:18.628+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tbf_analysis_dag_v21.transformations.submit_pyspark_job2 scheduled__2023-08-28T00:00:00+00:00 [queued]>
+[2023-08-28T06:29:18.630+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-08-28T06:29:18.647+0000] {taskinstance.py:1382} INFO - Executing <Task(DataprocSubmitJobOperator): transformations.submit_pyspark_job2> on 2023-08-28 00:00:00+00:00
+[2023-08-28T06:29:18.664+0000] {standard_task_runner.py:57} INFO - Started process 143 to run task
+[2023-08-28T06:29:18.677+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'tbf_analysis_dag_v21', 'transformations.submit_pyspark_job2', 'scheduled__2023-08-28T00:00:00+00:00', '--job-id', '45', '--raw', '--subdir', 'DAGS_FOLDER/tbf_analysis_dag_v21.py', '--cfg-path', '/tmp/tmp8vcf7a3k']
+[2023-08-28T06:29:18.689+0000] {standard_task_runner.py:85} INFO - Job 45: Subtask transformations.submit_pyspark_job2
+[2023-08-28T06:29:18.713+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-28T06:29:18.762+0000] {task_command.py:415} INFO - Running <TaskInstance: tbf_analysis_dag_v21.transformations.submit_pyspark_job2 scheduled__2023-08-28T00:00:00+00:00 [running]> on host 98d871aa1e03
+[2023-08-28T06:29:18.775+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/utils/sqlalchemy.py:124: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  return not conf.get("database", "sql_alchemy_conn").startswith("mssql")
+
+[2023-08-28T06:29:18.830+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tbf_analysis_dag_v21' AIRFLOW_CTX_TASK_ID='transformations.submit_pyspark_job2' AIRFLOW_CTX_EXECUTION_DATE='2023-08-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-28T00:00:00+00:00'
+[2023-08-28T06:29:18.832+0000] {dataproc.py:2055} INFO - Submitting job
+[2023-08-28T06:29:18.834+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2023-08-28T06:29:18.835+0000] {connection.py:232} WARNING - Connection schemes (type: google_cloud_platform) shall not contain '_' according to RFC3986.
+[2023-08-28T06:29:18.836+0000] {base.py:73} INFO - Using connection ID 'google_cloud_default' for task execution.
+[2023-08-28T06:29:19.610+0000] {dataproc.py:2067} INFO - Job 95f89c45-8289-405e-b313-e688d92958eb submitted successfully.
+[2023-08-28T06:29:19.650+0000] {dataproc.py:2095} INFO - Waiting for job 95f89c45-8289-405e-b313-e688d92958eb to complete
+[2023-08-28T06:33:00.768+0000] {dataproc.py:2099} INFO - Job 95f89c45-8289-405e-b313-e688d92958eb completed successfully.
+[2023-08-28T06:33:00.803+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=tbf_analysis_dag_v21, task_id=transformations.submit_pyspark_job2, execution_date=20230828T000000, start_date=20230828T062918, end_date=20230828T063300
+[2023-08-28T06:33:00.832+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-28T06:33:00.848+0000] {taskinstance.py:2784} INFO - 0 downstream tasks scheduled from follow-on schedule check

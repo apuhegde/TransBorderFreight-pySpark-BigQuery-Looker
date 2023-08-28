@@ -1,0 +1,49 @@
+[2023-08-28T05:42:38.367+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tbf_analysis_dag_v20.install_pip_package_task manual__2023-08-28T05:42:32.454625+00:00 [queued]>
+[2023-08-28T05:42:38.372+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tbf_analysis_dag_v20.install_pip_package_task manual__2023-08-28T05:42:32.454625+00:00 [queued]>
+[2023-08-28T05:42:38.373+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-08-28T05:42:38.379+0000] {taskinstance.py:1382} INFO - Executing <Task(BashOperator): install_pip_package_task> on 2023-08-28 05:42:32.454625+00:00
+[2023-08-28T05:42:38.384+0000] {standard_task_runner.py:57} INFO - Started process 111 to run task
+[2023-08-28T05:42:38.389+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'tbf_analysis_dag_v20', 'install_pip_package_task', 'manual__2023-08-28T05:42:32.454625+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/tbf_analysis_dag_v20.py', '--cfg-path', '/tmp/tmpakltol6s']
+[2023-08-28T05:42:38.391+0000] {standard_task_runner.py:85} INFO - Job 35: Subtask install_pip_package_task
+[2023-08-28T05:42:38.403+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2023-08-28T05:42:38.432+0000] {task_command.py:415} INFO - Running <TaskInstance: tbf_analysis_dag_v20.install_pip_package_task manual__2023-08-28T05:42:32.454625+00:00 [running]> on host 7d623e02890b
+[2023-08-28T05:42:38.481+0000] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='tbf_analysis_dag_v20' AIRFLOW_CTX_TASK_ID='install_pip_package_task' AIRFLOW_CTX_EXECUTION_DATE='2023-08-28T05:42:32.454625+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2023-08-28T05:42:32.454625+00:00'
+[2023-08-28T05:42:38.482+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2023-08-28T05:42:38.483+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', "gcloud compute ssh trans-border-freights-394419-dataproc-m --zone=us-central1-b --project=trans-border-freights-394419 --command='pip install xlrd'"]
+[2023-08-28T05:42:38.494+0000] {subprocess.py:86} INFO - Output:
+[2023-08-28T05:42:39.150+0000] {subprocess.py:93} INFO - WARNING: The private SSH key file for gcloud does not exist.
+[2023-08-28T05:42:39.152+0000] {subprocess.py:93} INFO - WARNING: The public SSH key file for gcloud does not exist.
+[2023-08-28T05:42:39.152+0000] {subprocess.py:93} INFO - WARNING: You do not have an SSH key for gcloud.
+[2023-08-28T05:42:39.153+0000] {subprocess.py:93} INFO - WARNING: SSH keygen will be executed to generate a key.
+[2023-08-28T05:42:39.200+0000] {subprocess.py:93} INFO - Generating public/private rsa key pair.
+[2023-08-28T05:42:39.201+0000] {subprocess.py:93} INFO - Your identification has been saved in /home/***/.ssh/google_compute_engine
+[2023-08-28T05:42:39.201+0000] {subprocess.py:93} INFO - Your public key has been saved in /home/***/.ssh/google_compute_engine.pub
+[2023-08-28T05:42:39.202+0000] {subprocess.py:93} INFO - The key fingerprint is:
+[2023-08-28T05:42:39.202+0000] {subprocess.py:93} INFO - SHA256:xxC7e/uvCcz2NlJ71lNj/GlFiXof2kht2aqdehZG4G8 default@7d623e02890b
+[2023-08-28T05:42:39.203+0000] {subprocess.py:93} INFO - The key's randomart image is:
+[2023-08-28T05:42:39.203+0000] {subprocess.py:93} INFO - +---[RSA 3072]----+
+[2023-08-28T05:42:39.204+0000] {subprocess.py:93} INFO - |        .        |
+[2023-08-28T05:42:39.204+0000] {subprocess.py:93} INFO - |         o  .    |
+[2023-08-28T05:42:39.204+0000] {subprocess.py:93} INFO - |        o  . .. .|
+[2023-08-28T05:42:39.205+0000] {subprocess.py:93} INFO - |         +  .....|
+[2023-08-28T05:42:39.205+0000] {subprocess.py:93} INFO - |        S o .oo.o|
+[2023-08-28T05:42:39.206+0000] {subprocess.py:93} INFO - |         = ..oEO+|
+[2023-08-28T05:42:39.206+0000] {subprocess.py:93} INFO - |        . *.o+B+B|
+[2023-08-28T05:42:39.207+0000] {subprocess.py:93} INFO - |         o.++=*Bo|
+[2023-08-28T05:42:39.207+0000] {subprocess.py:93} INFO - |          .+B@= .|
+[2023-08-28T05:42:39.208+0000] {subprocess.py:93} INFO - +----[SHA256]-----+
+[2023-08-28T05:42:54.587+0000] {subprocess.py:93} INFO - Updating project ssh metadata...
+[2023-08-28T05:42:54.590+0000] {subprocess.py:93} INFO - ........................................................................Updated [https://www.googleapis.com/compute/v1/projects/trans-border-freights-394419].
+[2023-08-28T05:42:54.982+0000] {subprocess.py:93} INFO - .done.
+[2023-08-28T05:42:54.984+0000] {subprocess.py:93} INFO - Waiting for SSH key to propagate.
+[2023-08-28T05:42:55.211+0000] {subprocess.py:93} INFO - Warning: Permanently added 'compute.4762469910859322196' (ECDSA) to the list of known hosts.
+[2023-08-28T05:42:58.915+0000] {subprocess.py:93} INFO - Collecting xlrd
+[2023-08-28T05:42:58.976+0000] {subprocess.py:93} INFO -   Downloading xlrd-2.0.1-py2.py3-none-any.whl (96 kB)
+[2023-08-28T05:42:59.152+0000] {subprocess.py:93} INFO - Installing collected packages: xlrd
+[2023-08-28T05:42:59.243+0000] {subprocess.py:93} INFO - Successfully installed xlrd-2.0.1
+[2023-08-28T05:42:59.463+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-08-28T05:42:59.535+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=tbf_analysis_dag_v20, task_id=install_pip_package_task, execution_date=20230828T054232, start_date=20230828T054238, end_date=20230828T054259
+[2023-08-28T05:42:59.604+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-08-28T05:42:59.626+0000] {taskinstance.py:2784} INFO - 1 downstream tasks scheduled from follow-on schedule check
