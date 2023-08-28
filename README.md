@@ -52,13 +52,13 @@ You are required to have the following accounts and softwares installed on your 
 
 2. Clone this github repo
 
-3. Create a bucket on GCP and copy the file "dataproc-pip-installation.sh" into it using this code: 
+3. Create a bucket on GCP and copy the file "dataproc-pip-installation.sh" into it using gsutil: 
 
 ```
 gsutil cp <path-to-dataproc-pip-installation.sh> gs://accessory-bucket-name/scripts/dataproc-pip-installation.sh
 
 ```
-For example, I have called this bucket "tbf-analysis-accessory" and my code would read:
+For example, I've called this bucket "tbf-analysis-accessory", so my code would read:
 
 ```
 gsutil cp /Users/ahegde/Job_misc/Portfolio/TransBorderFreightAnalysis/VM_project_files/TransBorderFreight-pySpark-BigQuery-Looker/Terraform/dataproc-pip-installation.sh gs://tbf-analysis-accessory/scripts/dataproc-pip-installation.sh
