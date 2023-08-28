@@ -156,3 +156,161 @@
 [2023-08-28T06:38:24.285+0000] {logging_mixin.py:151} INFO - [2023-08-28T06:38:24.285+0000] {dag.py:2907} INFO - Sync 1 DAGs
 [2023-08-28T06:38:24.307+0000] {logging_mixin.py:151} INFO - [2023-08-28T06:38:24.307+0000] {dag.py:3677} INFO - Setting next_dagrun for tbf_analysis_dag_v21 to None, run_after=None
 [2023-08-28T06:38:24.322+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v21.py took 0.140 seconds
+[2023-08-28T16:00:59.147+0000] {processor.py:157} INFO - Started process (PID=30) to work on /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:00:59.154+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v21.py for tasks to queue
+[2023-08-28T16:00:59.160+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:00:59.159+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:00:59.277+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:00:59.274+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v21.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v21.py", line 137, in <module>
+    authenticate_service_acct_task >> transfer_to_GCS_task >> download_raw_data_task >> transformations
+NameError: name 'download_raw_data_task' is not defined
+[2023-08-28T16:00:59.281+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:00:59.336+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v21.py took 0.193 seconds
+[2023-08-28T16:01:29.475+0000] {processor.py:157} INFO - Started process (PID=54) to work on /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:01:29.478+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v21.py for tasks to queue
+[2023-08-28T16:01:29.485+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:01:29.484+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:01:29.503+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:01:29.502+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v21.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v21.py", line 137, in <module>
+    authenticate_service_acct_task >> transfer_to_GCS_task >> download_raw_data_task >> transformations
+NameError: name 'download_raw_data_task' is not defined
+[2023-08-28T16:01:29.504+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:01:29.520+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v21.py took 0.052 seconds
+[2023-08-28T16:01:59.778+0000] {processor.py:157} INFO - Started process (PID=80) to work on /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:01:59.779+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v21.py for tasks to queue
+[2023-08-28T16:01:59.780+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:01:59.780+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:01:59.793+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:01:59.792+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v21.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v21.py", line 137, in <module>
+    authenticate_service_acct_task >> transfer_to_GCS_task >> download_raw_data_task >> transformations
+NameError: name 'download_raw_data_task' is not defined
+[2023-08-28T16:01:59.794+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:01:59.810+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v21.py took 0.036 seconds
+[2023-08-28T16:02:30.061+0000] {processor.py:157} INFO - Started process (PID=96) to work on /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:02:30.062+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v21.py for tasks to queue
+[2023-08-28T16:02:30.063+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:02:30.063+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:02:30.080+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:02:30.079+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v21.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v21.py", line 137, in <module>
+    authenticate_service_acct_task >> transfer_to_GCS_task >> download_raw_data_task >> transformations
+NameError: name 'download_raw_data_task' is not defined
+[2023-08-28T16:02:30.081+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:02:30.098+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v21.py took 0.041 seconds
+[2023-08-28T16:03:00.421+0000] {processor.py:157} INFO - Started process (PID=121) to work on /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:03:00.423+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v21.py for tasks to queue
+[2023-08-28T16:03:00.426+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:03:00.425+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:03:00.448+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:03:00.446+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v21.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v21.py", line 137, in <module>
+    authenticate_service_acct_task >> transfer_to_GCS_task >> download_raw_data_task >> transformations
+NameError: name 'download_raw_data_task' is not defined
+[2023-08-28T16:03:00.449+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:03:00.468+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v21.py took 0.055 seconds
+[2023-08-28T16:03:30.795+0000] {processor.py:157} INFO - Started process (PID=146) to work on /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:03:30.797+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v21.py for tasks to queue
+[2023-08-28T16:03:30.799+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:03:30.798+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:03:30.815+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:03:30.813+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v21.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v21.py", line 137, in <module>
+    authenticate_service_acct_task >> transfer_to_GCS_task >> download_raw_data_task >> transformations
+NameError: name 'download_raw_data_task' is not defined
+[2023-08-28T16:03:30.816+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:03:30.833+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v21.py took 0.046 seconds
+[2023-08-28T16:04:01.212+0000] {processor.py:157} INFO - Started process (PID=170) to work on /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:04:01.214+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v21.py for tasks to queue
+[2023-08-28T16:04:01.216+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:04:01.216+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:04:01.237+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:04:01.236+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v21.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v21.py", line 137, in <module>
+    authenticate_service_acct_task >> transfer_to_GCS_task >> download_raw_data_task >> transformations
+NameError: name 'download_raw_data_task' is not defined
+[2023-08-28T16:04:01.238+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:04:01.257+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v21.py took 0.051 seconds
+[2023-08-28T16:04:31.564+0000] {processor.py:157} INFO - Started process (PID=187) to work on /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:04:31.566+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v21.py for tasks to queue
+[2023-08-28T16:04:31.567+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:04:31.567+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:04:31.602+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:04:31.598+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v21.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v21.py", line 137, in <module>
+    authenticate_service_acct_task >> transfer_to_GCS_task >> download_raw_data_task >> transformations
+NameError: name 'download_raw_data_task' is not defined
+[2023-08-28T16:04:31.603+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:04:31.628+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v21.py took 0.070 seconds
+[2023-08-28T16:05:01.947+0000] {processor.py:157} INFO - Started process (PID=212) to work on /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:05:01.949+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v21.py for tasks to queue
+[2023-08-28T16:05:01.951+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:05:01.950+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:05:01.968+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:05:01.967+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v21.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v21.py", line 137, in <module>
+    authenticate_service_acct_task >> transfer_to_GCS_task >> download_raw_data_task >> transformations
+NameError: name 'download_raw_data_task' is not defined
+[2023-08-28T16:05:01.969+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:05:01.988+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v21.py took 0.046 seconds
+[2023-08-28T16:05:32.318+0000] {processor.py:157} INFO - Started process (PID=236) to work on /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:05:32.319+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v21.py for tasks to queue
+[2023-08-28T16:05:32.321+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:05:32.320+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:05:32.338+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:05:32.337+0000] {dagbag.py:347} ERROR - Failed to import: /opt/airflow/dags/tbf_analysis_dag_v21.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 343, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tbf_analysis_dag_v21.py", line 137, in <module>
+    authenticate_service_acct_task >> transfer_to_GCS_task >> download_raw_data_task >> transformations
+NameError: name 'download_raw_data_task' is not defined
+[2023-08-28T16:05:32.339+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:05:32.358+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v21.py took 0.044 seconds
+[2023-08-28T16:05:39.418+0000] {processor.py:157} INFO - Started process (PID=245) to work on /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:05:39.419+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v21.py for tasks to queue
+[2023-08-28T16:05:39.420+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:05:39.420+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:05:39.445+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tbf_analysis_dag_v21']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:05:39.632+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:05:39.632+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-28T16:05:39.652+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:05:39.652+0000] {dag.py:3677} INFO - Setting next_dagrun for tbf_analysis_dag_v21 to None, run_after=None
+[2023-08-28T16:05:39.880+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v21.py took 0.465 seconds
+[2023-08-28T16:06:10.201+0000] {processor.py:157} INFO - Started process (PID=264) to work on /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:06:10.203+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/tbf_analysis_dag_v21.py for tasks to queue
+[2023-08-28T16:06:10.204+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:06:10.204+0000] {dagbag.py:539} INFO - Filling up the DagBag from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:06:10.229+0000] {processor.py:839} INFO - DAG(s) dict_keys(['tbf_analysis_dag_final']) retrieved from /opt/airflow/dags/tbf_analysis_dag_v21.py
+[2023-08-28T16:06:10.305+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:06:10.305+0000] {manager.py:501} INFO - Created Permission View: can delete on DAG:tbf_analysis_dag_final
+[2023-08-28T16:06:10.310+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:06:10.310+0000] {manager.py:501} INFO - Created Permission View: can read on DAG:tbf_analysis_dag_final
+[2023-08-28T16:06:10.312+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:06:10.312+0000] {manager.py:501} INFO - Created Permission View: can edit on DAG:tbf_analysis_dag_final
+[2023-08-28T16:06:10.319+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:06:10.319+0000] {dag.py:2907} INFO - Sync 1 DAGs
+[2023-08-28T16:06:10.478+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:06:10.478+0000] {dag.py:2929} INFO - Creating ORM DAG for tbf_analysis_dag_final
+[2023-08-28T16:06:10.484+0000] {logging_mixin.py:151} INFO - [2023-08-28T16:06:10.484+0000] {dag.py:3677} INFO - Setting next_dagrun for tbf_analysis_dag_final to 2023-08-28T00:00:00+00:00, run_after=2023-08-28T00:00:00+00:00
+[2023-08-28T16:06:10.495+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/tbf_analysis_dag_v21.py took 0.298 seconds

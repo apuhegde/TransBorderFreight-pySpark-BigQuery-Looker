@@ -66,7 +66,7 @@ gsutil cp /Users/ahegde/Job_misc/Portfolio/TransBorderFreightAnalysis/VM_project
 
 The variable "pip_initialization_script" in variables.tf file in the Terraform folder needs to be set to this GCP script path. 
 
-4. Navigate to the Terraform directory. Replace GCP details like project name, bucket name, etc. with yours, and set up cloud infrastructure using the following Terraform commands:
+4. Navigate to the Terraform directory. Replace GCP details like project name, bucket name, etc. in the variables.tf file with yours, and set up cloud infrastructure using the following Terraform commands:
     ```
     terraform init
     terraform plan
