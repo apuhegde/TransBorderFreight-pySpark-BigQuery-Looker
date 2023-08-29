@@ -26,9 +26,9 @@ The raw data is made available by the Bureau of Transportation Statistics (BTS),
 
 The data is in .csv format and is updated on the BTS website on a monthly basis. There is also a metadata file that accompanies the raw data, which details the codes used in the raw data files. The metadata is available in excel and pdf format, with the pdf file containing additional information than what is available in the excel file. Therefore, before using the metadata for this project, I manually curated and reconciled the excel and the pdf files. I’ve used this cleaned up metadata excel file as my input file, available here: [TransBorderCodes.xls](TransBorderCodes.xls)
 
-## Project overview
+## Pipeline architecture
 
-![Data pipeline overview](TBF_analysis_pipeline_overview.png)
+![Data pipeline architecture overview](TBF_analysis_pipeline_overview.png)
 
 Overview of the Transborder Freight data processing pipeline
 
