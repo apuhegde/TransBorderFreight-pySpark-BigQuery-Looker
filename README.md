@@ -32,7 +32,7 @@ The data is in .csv format and is updated on the BTS website on a monthly basis.
 
 Overview of the Transborder Freight data processing pipeline
 
-## Project execution
+## Pipeline execution
 
 1. Prerequisites: 
 You are required to have the following accounts and softwares installed on your system before you can begin:
