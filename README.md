@@ -93,6 +93,6 @@ The variable "pip_initialization_script" in variables.tf file in the Terraform f
 
 ## Analysis overview
 
-![Analysis overview](TBF_analysis_report.pdf)
+![Analysis overview](TBF_analysis_report.png)
 
 Overview of the Transborder Freight data analysis
