@@ -13,20 +13,20 @@ provider "google" {
   region  = var.region
 }
 
-# # Data Lake Bucket
-# resource "google_storage_bucket" "data_lake_bucket" {
-#   name          = "${local.data_lake_bucket}_${var.project}" # Concatenating DL bucket & Project name for unique naming
-#   location      = var.region
+# Data Lake Bucket
+resource "google_storage_bucket" "data_lake_bucket" {
+  name          = "${local.data_lake_bucket}_${var.project}" # Concatenating DL bucket & Project name for unique naming
+  location      = var.region
 
-#   storage_class = var.storage_class
-#   uniform_bucket_level_access = true
+  storage_class = var.storage_class
+  uniform_bucket_level_access = true
 
-#   versioning {
-#     enabled     = true
-#   }
+  versioning {
+    enabled     = true
+  }
 
-#   force_destroy = false
-# }
+  force_destroy = false
+}
 
 # Data Warehouse
 resource "google_bigquery_dataset" "dataset" {
