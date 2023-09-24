@@ -134,6 +134,8 @@ with DAG(dag_id="tbf_analysis_dag_final",
 
         submit_pyspark_job1 >> submit_pyspark_job2
 
-    # authenticate_service_acct_task >> transfer_to_GCS_task >> download_raw_data_task >> transformations
-    authenticate_service_acct_task >> transfer_to_GCS_task >> transformations
+    
+    #comment the download_raw_data_task line if you don't want to keep re-running the download data task.
+    authenticate_service_acct_task >> transfer_to_GCS_task >> download_raw_data_task >> transformations
+    # authenticate_service_acct_task >> transfer_to_GCS_task >> transformations
 
