@@ -43,7 +43,7 @@ You are required to have the following accounts and softwares installed on your 
         - Storage Object Viewer
         - BigQuery Admin
         - Dataproc Administrator
-        - Dataprov Service Agent
+        - Dataproc Service Agent
         - Editor 
     Download the auth-key credentials json file for this service account and save to `~/.google/credentials/google_credentials.json`.
     - Google SDK on local machine
